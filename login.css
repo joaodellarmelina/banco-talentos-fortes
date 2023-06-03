@@ -1,3 +1,13 @@
+@font-face {
+  font-family: mohave-light;
+  src: local(mohave), url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Light.ttf?v=1685755286929);
+}
+
+@font-face {
+  font-family: mohave-bold;
+  src: local(fonts), url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Bold.ttf?v=1685755293115);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900$display=swap");
 
 * {
@@ -6,6 +16,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -13,6 +24,7 @@ body {
   min-height: 100vh;
   background: #ffffff;
 }
+
 .box {
   position: relative;
   width: 370px;
@@ -21,6 +33,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .box::before {
   content: "";
   position: absolute;
@@ -32,6 +45,7 @@ body {
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
 }
+
 .box::after {
   content: "";
   position: absolute;
@@ -44,14 +58,17 @@ body {
   animation: animate 6s linear infinite;
   animation-delay: -3s;
 }
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 form {
   position: absolute;
   inset: 2px;
@@ -67,7 +84,9 @@ form {
   position: relative;
   width: 300px;
   margin-top: 35px;
+
 }
+
 .inputBox input {
   position: relative;
   width: 100%;
@@ -79,7 +98,9 @@ form {
   font-size: 1em;
   letter-spacing: 0.05em;
   z-index: 10;
+
 }
+
 input[type="submit"] {
   font-size: 20px;
   border: none;
@@ -90,11 +111,15 @@ input[type="submit"] {
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  font-family: mohave-light;
 }
+
 input[type="submit"]:hover {
   background: linear-gradient(90deg, #45f3ff, #280aea);
   opacity: 0.8;
+
 }
+
 .inputBox span {
   position: absolute;
   left: 0;
@@ -104,13 +129,16 @@ input[type="submit"]:hover {
   pointer-events: none;
   letter-spacing: 0.05em;
   transition: 0.05s;
+  font-family: mohave-light;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span {
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
   color: #110ad9;
   transform: translateX(-10px) translateY(-30px);
   font-size: 0.78em;
 }
+
 .inputBox i {
   position: absolute;
   left: 0;
@@ -123,28 +151,34 @@ input[type="submit"]:hover {
   pointer-events: none;
   z-index: 9;
 }
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i {
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
   height: 44px;
 }
+
 .links {
   display: flex;
   justify-content: space-between;
 }
+
 .links a {
   margin: 25px 0;
   font-size: 1em;
   color: #000000;
   text-decoration: none;
 }
+
 .links a:hover,
 .links a:nth-child(2) {
   color: #000000;
 }
+
 .links a:nth-child(2):hover {
   text-decoration: underline 2px;
   text-underline-offset: 5px;
 }
+
 .links a:nth-child(1):hover {
   text-decoration: underline 2px;
   text-underline-offset: 5px;
