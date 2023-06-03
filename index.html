@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banco de Talentos Fortes</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
 
-  <body>
-    <header>
-      <a href="./index.html" class="logo">
-        <img
-          src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/FORTES_LOGO.png?v=1685429439681"
-          alt="Logo da empresa Fortes Engenharia"
-        />
-      </a>
-      <div class="paths">
-        <a href="#">HABILIDADES</a>
-        <a href="#">EVENTOS</a>
-        <a href="#">TREINAMENTOS</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco de Talentos Fortes</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="box">
+    <form>
+      <img src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA_moldura-e1660776738611.png"
+        alt="logo fortes" />
+      <div class="inputBox">
+        <input type="text" id="login" required />
+        <span>Usuário</span>
+        <i></i>
       </div>
-      <div class="icons">
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-bell.png?v=1685429447309"
-            alt="Ícone de notificação"
-          />
-        </a>
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-gear.png?v=1685429444420"
-            alt="Ícone de configurações"
-          />
-        </a>
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-sac.png?v=1685429450213"
-            alt="Ícone de contatos"
-          />
-        </a>
+      <div class="inputBox">
+        <input type="password" id="senha" required />
+        <span>Senha</span>
+        <i></i>
       </div>
-      <a href="#" class="profile">
-        <div class="photo">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/profile-pic.png?v=1685429453409"
-            alt="Foto de perfil"
-          />
-        </div>
-        <span>ANDRÉ</span>
-      </a>
-    </header>
-  </body>
+      <input type="submit" id="entrar" value="Entrar" />
+      <div class="links">
+        <a href="#">Esqueceu a senha?</a>
+        <a href="#">Cadastrar-se</a>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>

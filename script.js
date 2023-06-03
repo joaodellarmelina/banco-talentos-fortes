@@ -23,7 +23,7 @@ entrar.addEventListener("click", function (e) {
     // VALIDAÇÃO DE LOGIN E SENHA
 
     if (login_text === login2 && senha_text === password) {
-        window.location = "index.html";
+        window.location = "home.html";
     } else {
         alert("usuário ou senha inválido")
 
