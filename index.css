@@ -120,6 +120,17 @@ input[type="submit"]:hover {
 
 }
 
+
+.erro {
+  font-family: mohave-light;
+  font-size: 20px;
+  position: absolute;
+  top: -100%;
+  left: 2%;
+  background-color: #0ecd9a25;
+  display: none;
+}
+
 .inputBox span {
   position: absolute;
   left: 0;

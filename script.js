@@ -20,12 +20,24 @@ entrar.addEventListener("click", function (e) {
     const password = "12345678"
 
 
+
+    // ELEMENTOS DE ERRO NA PÁGINA
+
+    var erro = document.getElementById("erro")
+    var erro2 = document.getElementById("erro2")
+
+    console.log(login_text, senha_text)
+
     // VALIDAÇÃO DE LOGIN E SENHA
 
     if (login_text === login2 && senha_text === password) {
         window.location = "home.html";
+    } else if (login_text === ' ' || senha_text === ' ') {
+        erro2.style.display = "block"
+
     } else {
-        alert("usuário ou senha inválido")
+        erro.style.display = "block"
+
 
     }
 
