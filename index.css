@@ -17,24 +17,43 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* TODO PLANO DE FUNDO  */
 body {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 100px;
   align-items: center;
   min-height: 100vh;
   background: #ffffff;
+  background-image: url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/ENGENHEIRO.jpg?v=1685908224767);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(90.99deg, #ffffff.100%, #ffffff.80%, rgba(255, 255, 255, 0) 90%);
+  opacity: 1;
+  background-size: cover;
+  z-index: -5;
 }
 
 .box {
   position: relative;
   width: 370px;
   height: 450px;
-  background: #000000;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
   overflow: hidden;
+  z-index: 10;
 }
 
-.box::before {
+/* .box::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -44,6 +63,7 @@ body {
   background: linear-gradient(60deg, transparent, #0ecd9a, #0ecd9a);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
+  z-index: 9;
 }
 
 .box::after {
@@ -57,6 +77,7 @@ body {
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
+  z-index: 2;
 }
 
 @keyframes animate {
@@ -67,17 +88,17 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 form {
   position: absolute;
   inset: 2px;
   border-radius: 10px 10px;
-  background: #ffffff;
   z-index: 10;
   padding: 30px 30px;
   display: flex;
   flex-direction: column;
+
 }
 
 .inputBox {
@@ -94,11 +115,17 @@ form {
   background: transparent;
   border: none;
   outline: none;
-  color: #000000;
-  font-size: 1em;
+  color: #0000009a;
+  font-size: 1.3em;
   letter-spacing: 0.05em;
   z-index: 10;
+  border-radius: 10px;
+}
 
+input[type="text"],
+input[type="password"] {
+  font-family: mohave-light;
+  color: black;
 }
 
 input[type="submit"] {
@@ -114,6 +141,7 @@ input[type="submit"] {
   font-family: mohave-light;
 }
 
+
 input[type="submit"]:hover {
   background: linear-gradient(90deg, #45f3ff, #280aea);
   opacity: 0.8;
@@ -127,8 +155,8 @@ input[type="submit"]:hover {
   position: absolute;
   top: -100%;
   left: 2%;
-  background-color: #0ecd9a25;
   display: none;
+  color: red;
 }
 
 .inputBox span {
@@ -136,7 +164,7 @@ input[type="submit"]:hover {
   left: 0;
   padding: 20px 10px 10px;
   font-size: 1em;
-  color: #8f8f8f;
+  color: #000000b0;
   pointer-events: none;
   letter-spacing: 0.05em;
   transition: 0.05s;
@@ -145,9 +173,9 @@ input[type="submit"]:hover {
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-  color: #110ad9;
+  color: #0ecd9a;
   transform: translateX(-10px) translateY(-30px);
-  font-size: 0.78em;
+  font-size: 0.98em;
 }
 
 .inputBox i {
@@ -156,9 +184,10 @@ input[type="submit"]:hover {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #dadada;
+  background: #000000;
+  opacity: 0.1;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 0.4s;
   pointer-events: none;
   z-index: 9;
 }
@@ -176,13 +205,13 @@ input[type="submit"]:hover {
 .links a {
   margin: 25px 0;
   font-size: 1em;
-  color: #000000;
+  color: #0ecd9a;
   text-decoration: none;
 }
 
 .links a:hover,
 .links a:nth-child(2) {
-  color: #000000;
+  color: #0ecd9a;
 }
 
 .links a:nth-child(2):hover {
