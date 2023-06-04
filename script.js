@@ -34,6 +34,7 @@ entrar.addEventListener("click", function (e) {
         window.location = "home.html";
     } else if (login_text === ' ' || senha_text === ' ') {
         erro2.style.display = "block"
+        return;
 
     } else {
         erro.style.display = "block"
