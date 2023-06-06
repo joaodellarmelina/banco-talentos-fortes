@@ -237,6 +237,13 @@ footer {
 .logo img {
   width: 150px;
 }
+  
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
 
 
 }
