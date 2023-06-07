@@ -310,6 +310,7 @@ footer {
 }
 
 .notice-zelador p
+
 {
   text-align: left;
   padding: 40px 1px;
@@ -320,6 +321,7 @@ footer {
 }
 
 #text-zelador
+
 {
   padding-right: 20%;
   justify-content: center;
@@ -327,6 +329,7 @@ footer {
 }
 
 .notice-talentos
+
 {
   background: linear-gradient(#e4e4e4,#e1e1e1);
   position: absolute;
@@ -341,6 +344,7 @@ footer {
 }
 
 .notice-talentos img 
+
 {
   height: 80%;
   position: absolute;
@@ -350,6 +354,7 @@ footer {
 }
 
 .notice-talentos p
+
 {
   text-align: left;
   padding: 40px 1px;
@@ -360,8 +365,42 @@ footer {
 }
 
 #text-talentos
+
 {
   padding-right: 20%;
   justify-content: center;
   position: absolute;
+}
+
+.hr-containerd 
+
+{
+  position: relative;
+  width: calc(100% - 20%);
+  left: 10%;
+  top: 490px;
+}
+
+.hr-containerd hr 
+
+{
+  display: block;
+  border: none;
+  border-top: 2px solid #000;
+  margin: 50px;
+  padding: 0;
+}
+
+.hr-containerd .hr-textd
+
+{
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 1.5em;
+  font-family: mohave, sans-serif;
+  
 }
