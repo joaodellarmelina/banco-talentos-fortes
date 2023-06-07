@@ -243,7 +243,7 @@ footer {
 
 .espacamento
 {
-  padding: 50%;
+  padding: 53%;
 }
 
 .notice-xadrez
@@ -452,8 +452,6 @@ position: absolute;
 width: 100%;
 height: 80%;
 top: 2061px;
-max-width: 100%;
-max-height: 100%;
 background: #ffffff;
 }
 
@@ -471,7 +469,7 @@ background: #ffffff;
 {
   margin-top: -19%;
   position: absolute;
-  right: 32%;
+  right: 30%;
   font-size: 40px;
 }
 
@@ -479,7 +477,7 @@ background: #ffffff;
 {
   font-size: 20px;
   top: 38%;
-  right: 20%;
+  right: 17%;
   position: absolute;
   font-family: Mohave, sans-serif;
 }
