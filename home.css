@@ -1,6 +1,18 @@
 /* Adiciona as fontes Mohave, Montserrat e Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mohave:wght@300;400;500&family=Montserrat:wght@400;700&display=swap");
 
+@font-face {
+  font-family: mohave-light;
+  src: local(mohave),
+    url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Light.ttf?v=1685755286929);
+}
+
+@font-face {
+  font-family: mohave-bold;
+  src: local(fonts),
+    url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Bold.ttf?v=1685755293115);
+}
+
 * {
   padding: 0;
   margin: 0;
