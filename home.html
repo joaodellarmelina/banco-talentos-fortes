@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Banco de Talentos Fortes</title>
-
     <link rel="stylesheet" href="home.css" />
-
-    <script src="script.js" defer></script>
-
+    <script src="script-home.js" defer></script>
     <link
       rel="shortcut icon"
       href="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/f.favicon.ico?v=1686025264579"
@@ -26,30 +22,46 @@
         />
       </a>
       <div class="paths">
-        <a href="#">HABILIDADES</a>
+        <a href="habilidades.html">HABILIDADES</a>
         <a href="#">EVENTOS</a>
         <a href="#">TREINAMENTOS</a>
       </div>
-      <div class="icons">
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-bell.png?v=1685429447309"
-            alt="Ícone de notificação"
-          />
-        </a>
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-gear.png?v=1685429444420"
-            alt="Ícone de configurações"
-          />
-        </a>
-        <a href="#" class="icon">
-          <img
-            src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-sac.png?v=1685429450213"
-            alt="Ícone de contatos"
-          />
-        </a>
+          <div class="icons">
+      <div class="notificacao">
+        <span class="icone-notifi" id="icone-notifi">
+          <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-bell.png?v=1685429447309"
+            alt="Ícone de notificação" />
+        </span>
+        <div class="notificações" id="bloco-notifi">
+
+          <hr>
+          <h3>NOVOS EVENTOS QUE SÃO A "SUA CARA" DISPONÍVEL</h3>
+          <p>André tem evento novo na área, já conferiu?</p>
+          <hr>
+          <h3>REGISTRE SEU E-MAIL PARA RECEBER NOSSAS NOTIFICAÇÕES</h3>
+          <p>Vá em configurações e cadastre seu E-MAIL</p>
+          <hr>
+          <h3>ATUALIZE SUAS HABILIDADES PARA SABERMOS MAIS SOBRE VOCÊ</h3>
+          <p>Faz um tempo que não atualiza suas habilidades, aprendeu algo novo?</p>
+          <hr>
+          <h3>NOVOS EVENTOS QUE SÃO A "SUA CARA" DISPONÍVEL</h3>
+          <p>André tem evento novo na área, já conferiu?</p>
+          <hr>
+          <h3>NOVOS EVENTOS QUE SÃO A "SUA CARA" DISPONÍVEL</h3>
+          <p>André tem evento novo na área, já conferiu?</p>
+          <hr>
+
+        </div>
       </div>
+      <a href="#" class="icon">
+        <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-gear.png?v=1685429444420"
+          alt="Ícone de configurações" />
+      </a>
+      <a href="#" class="icon">
+        <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-sac.png?v=1685429450213"
+          alt="Ícone de contatos" />
+      </a>
+    </div>
       <a href="#" class="profile">
         <div class="photo">
           <img
@@ -60,7 +72,7 @@
         <span>ANDRÉ</span>
       </a>
     </header>
-
+<main>
     <div class="back-image">
       <div class="back-white">
         <div class="back">
@@ -161,6 +173,9 @@
     </div>
 
     <div class="espacamento"></div>
+  <div class="fechar-notifi" id="close"></div>
+    </main>
+    
     <footer>
       <div class="container-1">
         <div class="footer-logo">
