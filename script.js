@@ -16,8 +16,8 @@ entrar.addEventListener("click", function (e) {
 
     // LOGIN E SENHA ANDRÉ
 
-    const login2 = "André"
-    const password = "12345678"
+    const login2 = "admin"
+    const password = "admin"
 
 
 
