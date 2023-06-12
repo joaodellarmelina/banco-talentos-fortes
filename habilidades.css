@@ -14,91 +14,130 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Mohave", sans-serif;
 }
 
 header {
-    font-family: "Mohave", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px 10px 10px;
-    border: 1px solid #000000;
-    height: 100px;
-}
-
-.paths {
-    padding-top: 15px;
+  font-family: "Mohave", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid #000000;
 }
 
 .paths a {
-    padding: 0 60px;
-    font-size: 26px;
-    color: #000000;
-    font-weight: 500;
+  padding: 0 50px;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 500;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .logo img {
-    width: 197px;
+  width: 197px;
 }
-
 
 .icons {
   display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
+  justify-content: flex-end;
+  align-items: center;
   cursor: pointer;
+  width: 197px;
 }
 
 .icon {
-  padding: 10px;
+  height: 24px;
+  padding: 0 25px 0 7px;
 }
 
 .icon img {
   height: 24px;
-
 }
 
 #icone-notifi {
-  padding: 10px;
-}
-
-#icone-notifi img:hover {
-  height: 25px;
-}
-
-#icone-notifi img {
-  margin-top: 10px;
   height: 24px;
 }
 
+#icone-notifi:hover {
+  transform: scale(1.05);
+}
+
+/* POP UP NOTIFICAÇÃO */
+
+.notificações {
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 350px;
+  height: 550px;
+  position: absolute;
+  top: 1;
+  left: 68%;
+  z-index: 1;
+  border: 1px solid black;
+  border-top: none;
+  display: none;
+}
+
+.notificacao {
+  height: 24px;
+}
+
+.notificacao:hover .notificações {
+  display: block;
+}
+
+div.notificações {
+  font-family: mohave-light;
+  text-align: center;
+  display: flexbox;
+  font-size: 15px;
+  margin-top: 32px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.5em;
+}
+
+.fechar-notifi {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    color: #000000;
+  height: 60px;
 }
 
-.profile span {
-    font-size: 20px;
-    line-height: 0.8;
-}
-
-.photo img {
-    border-radius: 50%;
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 footer {
