@@ -19,7 +19,7 @@
   border: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Mohave', sans-serif;
+  font-family: "Mohave", sans-serif;
 }
 
 header {
@@ -27,13 +27,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px 10px 10px;
+  padding: 0 15px;
   border-bottom: 1px solid #000000;
-  height: 100px;
-}
-
-.paths {
-  padding-top: 15px;
 }
 
 .paths a {
@@ -47,7 +42,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .logo img {
@@ -57,7 +52,6 @@ header {
 .icons {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
   cursor: pointer;
 }
 
@@ -67,11 +61,6 @@ header {
 
 .icon img {
   height: 24px;
-
-}
-
-#icone-notifi {
-  padding: 10px;
 }
 
 #icone-notifi img:hover {
@@ -102,15 +91,12 @@ header {
   display: block;
 }
 
-
 div.notificações {
   font-family: mohave-light;
   text-align: center;
   display: flexbox;
   font-size: 15px;
   margin-top: 32px;
-
-
 }
 
 h3 {
@@ -118,7 +104,6 @@ h3 {
 }
 
 hr {
-
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -126,7 +111,6 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 0.5em;
-
 }
 
 .fechar-notifi {
@@ -144,16 +128,10 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
   color: #000000;
 }
 
-.profile span {
-  font-size: 20px;
-  line-height: 0.8;
-}
-
-.photo img {
+.profile img {
   border-radius: 50%;
 }
 
@@ -261,7 +239,7 @@ hr {
 }
 
 .evento-right {
-  background-color: #C0D1F8;
+  background-color: #c0d1f8;
 }
 
 .evento-container {
@@ -280,24 +258,24 @@ hr {
 }
 
 .evento-text h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
 .evento-text p {
   padding: 15px 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
 }
 
 .evento-text button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  background-color: #0000FF;
+  background-color: #0000ff;
   color: #ffffff;
   padding: 10px 30px;
   border-radius: 20px;
@@ -310,11 +288,6 @@ hr {
 .evento-img img {
   width: 100%;
 }
-
-
-
-
-
 
 /* Footer */
 
