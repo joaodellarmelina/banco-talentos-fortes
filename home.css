@@ -52,10 +52,13 @@ header {
 .icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
+  padding-top: 20px;
 }
 
 .icon {
+  height: 100%;
   padding: 10px;
 }
 
@@ -63,13 +66,12 @@ header {
   height: 24px;
 }
 
-#icone-notifi img:hover {
-  height: 25px;
+#icone-notifi img {
+  height: 24px;
 }
 
-#icone-notifi img {
-  margin-top: 10px;
-  height: 24px;
+#icone-notifi img:hover {
+  transform: scale(1.05);
 }
 
 /* POP UP NOTIFICAÇÃO */
@@ -85,6 +87,10 @@ header {
   border: 1px solid black;
   border-top: none;
   display: none;
+}
+
+.notificacao {
+  height: 100%;
 }
 
 .notificacao:hover .notificações {
@@ -125,13 +131,12 @@ hr {
 }
 
 .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #000000;
+  border-bottom: 20px;
 }
 
 .profile img {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
