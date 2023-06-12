@@ -82,7 +82,8 @@ header {
   height: 550px;
   position: absolute;
   top: 1;
-  left: 80%;
+  right: 0;
+  margin-left: auto;
   z-index: 1;
   border: 1px solid black;
   border-top: none;
@@ -102,7 +103,7 @@ div.notificações {
   text-align: center;
   display: flexbox;
   font-size: 15px;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 h3 {
