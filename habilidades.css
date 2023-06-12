@@ -99,7 +99,7 @@ header {
 }
 
 div.notificações {
-  font-family: mohave-light;
+  font-family: mohave-light, sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
@@ -282,56 +282,4 @@ footer {
 
 .habilidades-add {
   padding-top: 40px;
-}
-
-/* POP UP NOTIFICAÇÃO */
-
-.notificações {
-  background-color: rgba(255, 255, 255, 0.89);
-  width: 350px;
-  height: 550px;
-  position: absolute;
-  top: 1;
-  left: 68%;
-  z-index: 1;
-  border: 1px solid black;
-  border-top: none;
-  display: none;
-}
-
-.notificacao:hover .notificações {
-  display: block;
-}
-
-div.notificações {
-  font-family: mohave-light;
-  text-align: center;
-  display: flexbox;
-  font-size: 15px;
-  margin-top: 32px;
-}
-
-h3 {
-  margin-top: 15px;
-}
-
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 0.5em;
-}
-
-.fechar-notifi {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }
