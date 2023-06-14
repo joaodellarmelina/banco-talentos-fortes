@@ -216,6 +216,25 @@ hr {
     font-weight: 300;
 }
 
+.nav-pages {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    cursor: pointer;
+    width: 197px;
+    position: relative;
+    left: 40%;
+}
+
+.nav-pages a {
+    font-size: 25px;
+    color: black;
+    font-family: mohave-bold;
+    margin: 10px;
+}
+
 
 
 
