@@ -13,13 +13,12 @@ habilidadesItens.forEach((e) => {
 
 removeBtn.forEach((e) => {
   e.addEventListener("mouseover", function () {
-    console.log(e);
-    e.parentElement.classList.add("remove");
+    e.previousElementSibling.classList.add("remove");
   });
-  // e.addEventListener("mouseout", function () {
-  //   habilidadesItensDiv.classList.remove("remove");
-  // });
-  // e.removeBtn.addEventListener("click", function () {
-  //   habilidadesItens.remove();
-  // });
+  e.addEventListener("mouseout", function () {
+    e.previousElementSibling.classList.remove("remove");
+  });
+  e.addEventListener("click", function () {
+    e.parentElement.remove();
+  });
 });
