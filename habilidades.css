@@ -301,6 +301,7 @@ footer {
 .habilidades-itens div.remove {
   border: 4px solid rgba(219, 24, 24);
   box-shadow: rgba(219, 24, 24, 0.15) 0px 8px 24px;
+  transition: ease 0.4s;
 }
 
 .habilidades-itens span {
@@ -308,7 +309,7 @@ footer {
   font-size: 32px;
 }
 
-.habilidades-itens a {
+.remove-button {
   display: none;
   position: absolute;
   font-size: 25px;
@@ -316,6 +317,12 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   color: rgb(219, 24, 24);
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .habilidades-add {

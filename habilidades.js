@@ -1,6 +1,6 @@
 const habilidadesItens = document.querySelector('.habilidades-itens');
 const habilidadesItensDiv = document.querySelector('.habilidades-itens div');
-const removeBtn = document.querySelector('.habilidades-itens a');
+const removeBtn = document.querySelector('.remove-button');
 
 
 habilidadesItens.addEventListener('mouseover', function() {
@@ -21,5 +21,5 @@ removeBtn.addEventListener('mouseout', function() {
 })
 
 removeBtn.addEventListener('click', function() {
-  habilidadesItens.remove;
+  habilidadesItens.remove();
 })
