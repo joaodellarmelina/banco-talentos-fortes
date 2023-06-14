@@ -1,0 +1,290 @@
+/* Adiciona as fontes Mohave, Montserrat e Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mohave:wght@300;400;500&family=Montserrat:wght@400;700&display=swap");
+
+@font-face {
+    font-family: mohave-light;
+    src: local(mohave),
+        url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Light.ttf?v=1685755286929);
+}
+
+@font-face {
+    font-family: mohave-bold;
+    src: local(fonts),
+        url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Bold.ttf?v=1685755293115);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Mohave", sans-serif;
+}
+
+header {
+    font-family: "Mohave", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.paths a {
+    padding: 0 50px;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.logo img {
+    width: 197px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    width: 197px;
+}
+
+.icon {
+    height: 24px;
+    padding: 0 25px 0 7px;
+}
+
+.icon img {
+    height: 24px;
+}
+
+#icone-notifi {
+    height: 24px;
+}
+
+#icone-notifi:hover {
+    transform: scale(1.05);
+}
+
+/* POP UP NOTIFICAÇÃO */
+
+.notificações {
+    background-color: rgba(255, 255, 255, 0.89);
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    margin-left: auto;
+    z-index: 1;
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+
+.notificacao {
+    height: 24px;
+}
+
+.notificacao:hover .notificações {
+    display: block;
+}
+
+div.notificações {
+    font-family: mohave-light;
+    text-align: center;
+    display: flexbox;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.5em;
+}
+
+.fechar-notifi {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.profile {
+    height: 60px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* EXLUSIVO DE TREINAMENTOS */
+
+.treinamento-right {
+    background-color: #c0d1f8;
+}
+
+.treinamento-container {
+    display: flex;
+    padding: 80px 6%;
+}
+
+.treinamento-text {
+    width: 50%;
+    align-self: center;
+    padding-right: 35px;
+}
+
+.treinamento-text.left {
+    padding: 0 0 0 35px;
+}
+
+.treinamento-text h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.treinamento-text p {
+    padding: 15px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.data {
+    margin: 20px;
+    padding-bottom: 20px;
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+
+}
+
+.treinamento-text button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.treinamento-img {
+    width: 50%;
+}
+
+.treinamento-img img {
+    width: 100%;
+}
+
+.hr-text {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 50px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #cacaca;
+    height: 165px;
+    bottom: 0;
+    padding: 0 8%;
+}
+
+.container-1 {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #85b2da;
+}
+
+.footer-logo img {
+    width: 146px;
+    padding-top: 20px;
+}
+
+.footer-paths {
+    padding-left: 20px;
+}
+
+.footer-paths a {
+    padding: 12px;
+    color: #666666;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-icons {
+    margin-left: auto;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    color: #666666;
+    padding: 0 10px;
+}
+
+.container-2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-rights span {
+    color: #666666;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-policy a {
+    padding: 0 15px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-policy a:nth-child(3) {
+    padding-right: 0;
+}
