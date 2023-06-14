@@ -320,11 +320,6 @@ footer {
   cursor: pointer;
 }
 
-.remove-button:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
-
 .habilidades-add {
   margin-left: auto;
   margin-top: 50px;

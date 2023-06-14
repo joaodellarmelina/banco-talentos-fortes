@@ -1,25 +1,24 @@
-const habilidadesItens = document.querySelector('.habilidades-itens');
-const habilidadesItensDiv = document.querySelector('.habilidades-itens div');
-const removeBtn = document.querySelector('.remove-button');
+const habilidadesItens = document.querySelectorAll(".habilidades-itens");
+const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
+const removeBtn = document.querySelector(".remove-button");
 
+habilidadesItens.forEach((e) => {
+  e.addEventListener("mouseover", function () {
+    removeBtn.style.display = "block";
+  });
+  e.addEventListener("mouseout", function () {
+    removeBtn.style.display = "none";
+  });
+});
 
-habilidadesItens.addEventListener('mouseover', function() {
-  removeBtn.style.display = 'block';
-})
+removeBtn.addEventListener("mouseover", function () {
+  habilidadesItensDiv.classList.add("remove");
+});
 
-habilidadesItens.addEventListener('mouseout', function() {
-  removeBtn.style.display = 'none';
-})
+removeBtn.addEventListener("mouseout", function () {
+  habilidadesItensDiv.classList.remove("remove");
+});
 
-
-removeBtn.addEventListener('mouseover', function() {
-  habilidadesItensDiv.classList.add('remove');
-})
-
-removeBtn.addEventListener('mouseout', function() {
-  habilidadesItensDiv.classList.remove('remove');
-})
-
-removeBtn.addEventListener('click', function() {
+removeBtn.addEventListener("click", function () {
   habilidadesItens.remove();
-})
+});
