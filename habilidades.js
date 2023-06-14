@@ -4,11 +4,11 @@ const removeBtn = document.querySelector(".remove-button");
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
-    console.log(e);
+    e.lastElementChild.style.display = "block";
   });
-  // e.addEventListener("mouseout", function () {
-  //   removeBtn.style.display = "none";
-  // });
+  e.addEventListener("mouseout", function () {
+    e.lastElementChild.style.display = "none";
+  });
 });
 
 removeBtn.addEventListener("mouseover", function () {
