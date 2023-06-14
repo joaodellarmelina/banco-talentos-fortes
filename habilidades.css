@@ -287,6 +287,7 @@ footer {
 
 .habilidades-itens {
   padding: 10px 40px 30px;
+  position: relative;
 }
 
 .habilidades-itens div {
@@ -299,6 +300,12 @@ footer {
 .habilidades-itens span {
   font-weight: 400;
   font-size: 32px;
+}
+
+.habilidades-itens a {
+  position: absolute;
+  font-size: 22px;
+  right: 50%;
 }
 
 .habilidades-add {
