@@ -258,7 +258,7 @@ footer {
 }
 
 .habilidades-title {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -270,6 +270,12 @@ footer {
   line-height: 1;
 }
 
+.habilidades-box {
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(10, 10, 255, 0.25) 0px 8px 24px;
+}
+
 .habilidades-subtitle {
   font-size: 36px;
   font-weight: 500;
@@ -277,7 +283,7 @@ footer {
 
 .habilidades-container {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .habilidades-itens {
@@ -298,7 +304,7 @@ footer {
 
 .habilidades-add {
   margin-left: auto;
-  padding: 80px 20px 20px;
+  padding: 90px 0 10px 20px;
 }
 
 .btn-add {
