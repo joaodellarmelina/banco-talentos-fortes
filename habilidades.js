@@ -1,6 +1,7 @@
 const habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
+const addBtn = document.querySelectorAll(".btn-add");
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -22,3 +23,10 @@ removeBtn.forEach((e) => {
     e.parentElement.remove();
   });
 });
+
+
+addBtn.forEach((e) => {
+  e.addEventListener("click", function () {
+    
+  })
+})

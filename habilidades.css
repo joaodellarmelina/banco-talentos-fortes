@@ -334,4 +334,5 @@ footer {
   border-radius: 15px;
   color: #ffffff;
   box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
+  cursor: pointer;
 }
