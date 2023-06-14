@@ -286,8 +286,9 @@ footer {
 }
 
 .habilidades-itens {
-  padding: 10px 40px 30px;
+  padding: 10px 40px 20px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .habilidades-itens div {
