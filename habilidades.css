@@ -308,7 +308,7 @@ footer {
 }
 
 .habilidades-itens a {
-/*   display: none; */
+  display: none;
   position: absolute;
   font-size: 25px;
   padding-top: 5px;
