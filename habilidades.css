@@ -257,9 +257,15 @@ footer {
   border-radius: 25px;
 }
 
+.habilidades-title {
+  padding-bottom: 20px;
+}
+
 .habilidades-title h1 {
+  text-align: center;
   font-size: 50px;
   font-weight: 500;
+  border-bottom: 3px solid rgba(0, 0, 255, 0.8);
 }
 
 .habilidades-subtitle {
@@ -280,6 +286,7 @@ footer {
   padding: 0 15px;
   border-radius: 20px;
   border: 4px solid rgba(0, 0, 255, 0.8);
+  box-shadow: rgba(10, 10, 255, 0.15) 0px 8px 24px;
 }
 
 .habilidades-itens span {
@@ -293,7 +300,11 @@ footer {
 }
 
 .btn-add {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
-  background: 
+  background: rgba(0, 0, 255, 0.9);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
 }
