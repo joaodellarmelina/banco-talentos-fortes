@@ -27,6 +27,6 @@ removeBtn.forEach((e) => {
 
 addBtn.forEach((e) => {
   e.addEventListener("click", function () {
-    
+    console.log(e);
   })
 })
