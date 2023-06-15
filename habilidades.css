@@ -210,7 +210,7 @@ footer {
 
 @media (max-width: 900px) {
   header {
-    font-family: "Mohave", sans-serif;
+    font-family: mohave-light, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -249,7 +249,7 @@ footer {
 }
 
 .habilidades {
-  font-family: "Mohave", sans-serif;
+  font-family: mohave-light, sans-serif;
   background-color: #ffffff;
   padding: 20px 30px;
   border-radius: 25px;

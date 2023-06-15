@@ -143,8 +143,13 @@ hr {
 
 /* EXLUSIVO DE TREINAMENTOS */
 
+main {
+    margin-top: 105px;
+}
+
 .treinamento-right {
     background-color: #c0d1f8;
+    border-radius: 10px;
 }
 
 .treinamento-container {
@@ -163,57 +168,111 @@ hr {
 }
 
 .treinamento-text h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-family: mohave-bold;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .treinamento-text p {
-    padding: 15px 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 20px 0;
+    font-family: mohave-light;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400px;
     text-align: justify;
+    margin-top: 30px;
+
 }
 
 .data {
-    margin: 20px;
-    padding-bottom: 20px;
-    display: block;
-    position: absolute;
-    top: 85%;
-    left: 5%;
+    font-size: 23.5px;
+    margin-top: 0px;
+    font-family: mohave-bold;
+}
 
+.data2 {
+    font-size: 25px;
+    margin-top: 150px;
+    font-family: mohave-bold;
 }
 
 .treinamento-text button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    background-color: #0000ff;
-    color: #ffffff;
+    font-family: mohave-light;
+    font-size: 38px;
+    font-weight: 700px;
+    background-color: #ffffff;
+    color: #0000ff;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: rgba(10, 10, 255, 0.25) 0px 8px 24px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 250px;
+}
+
+.treinamento-text button:hover {
+    font-size: 38.2px;
+    color: #0000ff9d;
+    box-shadow: rgba(10, 10, 255, 0.521) 0px 8px 24px;
+}
+
+.treinamento-text a {
+    color: #0000ffc9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.treinamento-text a:hover {
+    color: #0000ff77;
+
 }
 
 .treinamento-img {
     width: 50%;
+    margin-top: 50px;
 }
 
 .treinamento-img img {
-    width: 100%;
+    width: 700px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: rgba(38, 117, 182, 0.349) 8px 8px 8px 8px;
+    cursor: pointer;
+}
+
+.treinamento-img img:hover {
+    width: 700.5px;
+    height: 420.5px;
+    box-shadow: rgba(38, 117, 182, 0.445) 8px 8px 8px 8px;
 }
 
 .hr-text {
     position: absolute;
-    top: 0px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     padding: 0 50px;
-    margin-bottom: 5px;
-    font-size: 50px;
-    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+.hr-text h1 {
+    font-family: mohave-bold;
+    font-size: 60px;
+    font-weight: 300px;
+
+}
+
+.hr-container p {
+    font-size: 25px;
+    font-family: mohave-light;
+    text-align: center;
+    padding-top: 60px;
 }
 
 .nav-pages {
@@ -235,6 +294,9 @@ hr {
     margin: 10px;
 }
 
+.treinamento-right {
+    margin: 80px;
+}
 
 
 
