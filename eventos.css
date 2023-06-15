@@ -141,39 +141,39 @@ hr {
     border-radius: 50%;
 }
 
-/* EXLUSIVO DE TREINAMENTOS */
+/* EXLUSIVO DE EVENTOS */
 
 main {
     margin-top: 105px;
 }
 
-.treinamento-right {
+.evento-right {
     background-color: #c0d1f8;
     border-radius: 10px;
 }
 
-.treinamento-container {
+.evento-container {
     display: flex;
     padding: 80px 6%;
 }
 
-.treinamento-text {
+.evento-text {
     width: 50%;
     align-self: center;
     padding-right: 35px;
 }
 
-.treinamento-text.left {
+.evento-text.left {
     padding: 0 0 0 35px;
 }
 
-.treinamento-text h3 {
+.evento-text h3 {
     font-family: mohave-bold;
     font-size: 50px;
     font-weight: 700;
 }
 
-.treinamento-text p {
+.evento-text p {
     padding: 20px 0;
     font-family: mohave-light;
     font-size: 30px;
@@ -196,7 +196,7 @@ main {
     font-family: mohave-bold;
 }
 
-.treinamento-text button {
+.evento-text button {
     font-family: mohave-light;
     font-size: 38px;
     font-weight: 700px;
@@ -211,29 +211,29 @@ main {
     margin-left: 250px;
 }
 
-.treinamento-text button:hover {
+.evento-text button:hover {
     font-size: 38.2px;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
 }
 
-.treinamento-text a {
+.evento-text a {
     color: #0000ffc9;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.treinamento-text a:hover {
+.evento-text a:hover {
     color: #0000ff77;
 
 }
 
-.treinamento-img {
+.evento-img {
     width: 50%;
     margin-top: 50px;
 }
 
-.treinamento-img img {
+.evento-img img {
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -243,7 +243,7 @@ main {
     margin-left: 50px;
 }
 
-.treinamento-img img:hover {
+.evento-img img:hover {
     width: 80.5%;
     height: 80.5%;
     box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
@@ -251,7 +251,7 @@ main {
 
 .hr-text {
     position: absolute;
-    top: 40px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -259,7 +259,6 @@ main {
     margin-bottom: 10px;
     margin-top: 100px;
     border-radius: 10px 10px 0px 0px;
-
 
 }
 
@@ -296,8 +295,9 @@ main {
     margin: 10px;
 }
 
-.treinamento-right {
+.evento-right {
     margin: 80px;
+
 }
 
 
