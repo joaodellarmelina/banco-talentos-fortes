@@ -234,7 +234,7 @@ main {
 }
 
 .evento-img img {
-    width: 80%;
+    width: 94%;
     height: 80%;
     border-radius: 10px;
     box-shadow: rgba(38, 117, 182, 0.411) 8px 8px 8px 8px;
@@ -244,7 +244,7 @@ main {
 }
 
 .evento-img img:hover {
-    width: 80.5%;
+    width: 94.5%;
     height: 80.5%;
     box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
 }
@@ -365,7 +365,7 @@ footer {
     color: #666666;
     font-size: 14px;
     font-weight: 500;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 .footer-policy a:nth-child(3) {
