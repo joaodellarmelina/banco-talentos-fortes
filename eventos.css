@@ -155,7 +155,7 @@ main {
   margin-bottom: 6%;
 }
 
-.eventos-right {
+.evento-right {
   margin: 0 auto;
   background-color: #c0d1f8;
   border-radius: 10px;
@@ -164,35 +164,35 @@ main {
   margin-bottom: 6.5%;
 }
 
-.eventos-left {
+.evento-left {
   margin: 0 auto;
   width: 100%;
   max-width: 1280px;
   margin-bottom: 6%;
 }
 
-.eventos-container {
+.evento-container {
     display: flex;
     padding: 70px 6%;
 }
 
-.eventos-text {
+.evento-text {
     width: 50%;
     align-self: center;
     padding-right: 35px;
 }
 
-.eventos-text.left {
+.evento-text.left {
     padding: 0 0 0 35px;
 }
 
-.eventos-text h3 {
+.evento-text h3 {
     font-family: "mohave-bold",sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
 
-.eventos-text p {
+.evento-text p {
     font-family: "mohave-light", sans-serif;
     font-size: 30px;
     text-align: justify;
@@ -212,7 +212,7 @@ main {
     font-family: "mohave-bold", sans-serif;
 }
 
-.eventos-img button {
+.evento-img button {
     font-family: "mohave-light", sans-serif;
     font-size: 20px;
     background-color: #0000ff;
@@ -225,29 +225,29 @@ main {
   
 }
 
-.eventos-img button:hover {
+.evento-img button:hover {
     font-size: 1.3rem;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
 }
 
-.eventos-text a {
+.evento-text a {
     color: #0000ffc9;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.eventos-text a:hover {
+.evento-text a:hover {
     color: #0000ff77;
 
 }
 
-.eventos-img {
+.evento-img {
     width: 50%;
     margin-top: 50px;
 }
 
-.eventos-img img {
+.evento-img img {
     width: 94%;
     height: 80%;
     border-radius: 10px;
@@ -257,7 +257,7 @@ main {
     margin-left: 50px;
 }
 
-.eventos-img img:hover {
+.evento-img img:hover {
     width: 94.5%;
     height: 80.5%;
     box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
@@ -265,13 +265,12 @@ main {
 
 .hr-text {
     position: absolute;
-    top: 40px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff;
     padding: 0 50px;
     margin-bottom: 10px;
-    margin-top: 100px;
     border-radius: 10px 10px 0px 0px;
 
 }
