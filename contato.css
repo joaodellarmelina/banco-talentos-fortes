@@ -187,8 +187,7 @@ body{
 }
 
 #Number h2 {
-  border-left: solid 5px #cbcbcb;
-  padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .tell {
@@ -202,17 +201,24 @@ body{
   flex-wrap: wrap;
 }
 
-#forum label {
+#forum label f1 {
   width: 40%;
 }
 
-#forum input {
+#forum label f2 {
   width: 60%;
+}
+
+#forum input {
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */
   background-color: #cbcbcb;
   border-radius: 2px;
+}
+
+#forum h2 {
+  padding-bottom: 8px;
 }
 
 #forum textarea {
