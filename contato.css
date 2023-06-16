@@ -201,15 +201,12 @@ body{
   flex-wrap: wrap;
 }
 
-#forum label f1 {
+#forum label  {
   width: 40%;
 }
 
-#forum label f2 {
-  width: 60%;
-}
-
 #forum input {
+  width: 70%;
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */
@@ -222,7 +219,7 @@ body{
 }
 
 #forum textarea {
-  width: 60%;
+  
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */

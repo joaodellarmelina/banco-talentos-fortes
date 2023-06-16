@@ -355,7 +355,7 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  padding: 50px;
   background: #cccccc;
   display: flex;
   justify-content: center;
@@ -370,12 +370,12 @@ footer {
 
 .form-field {
   font-family: inherit;
-  width: 100%;
+  width: 200%;
   border: 0;
   border-bottom: 2px solid #000000;
   outline: 0;
   font-size: 28px;
-  color: #ffffff;
+  color: #000000;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -387,7 +387,7 @@ footer {
   &:placeholder-shown ~ .form-label {
     font-size: 28px;
     cursor: text;
-    top: 27px;
+    top: 30px;
   }
 }
 
@@ -408,10 +408,10 @@ footer {
     transition: 0.2s;
     font-size: 24px;
     color: #0000ffcc;
-    font-weight:600;    
+    font-weight: 500;    
   }
   padding-bottom: 6px;  
-  font-weight: 600;
+  font-weight: 500;
   border-width: 3px;
   border-image: linear-gradient(to right, #0000ffcc, #487ff7);
   border-image-slice: 1;
