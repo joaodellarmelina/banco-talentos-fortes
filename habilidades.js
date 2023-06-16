@@ -6,6 +6,7 @@ const habilidadesBlur = document.querySelector("#blur");
 const inputContainer = document.querySelector(".input-container");
 const btnSalvar = document.querySelector(".salvar");
 const btnCancelar = document.querySelector(".cancelar");
+const form = document.querySelector(".form-group");
 const inputField = document.querySelector(".form-field");
 
 habilidadesItens.forEach((e) => {
@@ -36,13 +37,15 @@ addBtn.forEach((e) => {
   });
 });
 
-function saveInput() {
-  
-}
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var inputValue = inputField.value;
+  console.log(inputValue);
+})
 
-btnSalvar.addEventListener("click", function () {
+btnSalvar.addEventListener("click", function (e) {
   inputContainer.style.display = "none";
-  habilidadesBlur.classList.toggle("active");
+  habilidadesBlur.classList.toggle("active");  
 });
 
 btnCancelar.addEventListener("click", function () {
