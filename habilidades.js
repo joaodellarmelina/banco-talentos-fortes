@@ -4,11 +4,14 @@ const removeBtn = document.querySelectorAll(".remove-button");
 const addBtn = document.querySelectorAll(".btn-add");
 const pessoaisAdd = document.querySelector(".pessoais-add");
 const pessoaisForm = document.querySelector("#pessoais-form");
+const pessoaisInput = document.querySelector("#pessoais-input");
 const profissionaisAdd = document.querySelector(".profissionais-add");
 const profissionaisForm = document.querySelector("#profissionais-form");
+const profissionaisInput = document.querySelector("#profissionais-input");
 const hobbiesAdd = document.querySelector(".hobbies-add");
 const hobbiesForm = document.querySelector("#hobbies-form");
-var newHabilidade = (document.createElement = `
+const hobbiesInput = document.querySelector("#hobbies-input");
+var newHabilidade = document.createElement = `
                 <div class="habilidades-itens">
                   <div>
                     
@@ -17,7 +20,7 @@ var newHabilidade = (document.createElement = `
                     <i class="fa-solid fa-xmark"></i>
                   </a>
                 </div>
-                `);
+                `;
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -40,3 +43,8 @@ removeBtn.forEach((e) => {
   });
 });
 
+pessoaisForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var pessoaisValue = pessoaisInput.value;
+  pessoaisAdd.prependChild(newHabilidade);
+})
