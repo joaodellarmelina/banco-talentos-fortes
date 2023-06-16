@@ -36,6 +36,7 @@ header {
   font-size: 25px;
   color: #000000;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
 .paths a:hover {
@@ -194,7 +195,7 @@ hr {
 .hr-container hr {
   display: block;
   border: none;
-  border-top: 1.5px solid #000;
+  border-top: 1.5px solid #000000;
   padding: 0;
 }
 
@@ -203,7 +204,7 @@ hr {
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 0 50px;
   margin-bottom: 5px;
   font-size: 50px;
@@ -286,23 +287,47 @@ hr {
   text-align: justify;
 }
 
-.evento-text button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  background-color: #0000ff;
-  color: #ffffff;
-  padding: 10px 30px;
-  border-radius: 20px;
-}
 
 .evento-img {
   width: 50%;
 }
 
-.evento-img img {
-  width: 100%;
+
+.evento-text button {
+  font-family: mohave, sans-serif;
+  font-size: 38px;
+  font-weight: 700px;
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-left: 250px;
 }
+
+.evento-text button:hover{
+    font-size: 38.2px;
+    color: #ffffff96;
+    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
+}
+
+.evento-img img {
+  width: 94%;
+  border-radius: 10px;
+  box-shadow: rgba(38, 117, 182, 0.411) 8px 8px 8px 8px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.evento-img img:hover {
+  width: 94.5%;
+  box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
+}
+
 
 /* Footer */
 
@@ -374,38 +399,4 @@ footer {
   padding-right: 0;
 }
 
-.evento-text button {
-  font-family: mohave-light;
-  font-size: 38px;
-  font-weight: 700px;
-  background-color: #0000ff;
-  color: #ffffff;
-  padding: 10px 30px;
-  border-radius: 15px;
-  margin-top: 50px;
-  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
-  cursor: pointer;
-  margin-top: 70px;
-  margin-left: 250px;
-}
-
-.evento-text button:hover{
-    font-size: 38.2px;
-    color: #ffffff96;
-    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
-}
-
-.evento-img img {
-  width: 94%;
-  border-radius: 10px;
-  box-shadow: rgba(38, 117, 182, 0.411) 8px 8px 8px 8px;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-left: 50px;
-}
-
-.evento-img img:hover {
-  width: 94.5%;
-  box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
-}
 

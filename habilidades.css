@@ -36,6 +36,11 @@ header {
   font-size: 25px;
   color: #000000;
   font-weight: 500;
+  transition: all 0.3s;
+}
+
+.paths a:hover {
+  opacity: 0.5;
 }
 
 .logo {
