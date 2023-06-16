@@ -38,6 +38,10 @@ header {
   font-weight: 500;
 }
 
+.paths a:hover {
+  opacity: 0.5;
+}
+
 .logo {
   display: flex;
   align-items: center;
