@@ -207,11 +207,19 @@ body{
 
 #forum input {
   width: 70%;
+}
+
+#forum input:hover {
+  width: 70%;
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */
   background-color: #cbcbcb;
   border-radius: 2px;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 44px;
 }
 
 #forum h2 {
@@ -219,7 +227,7 @@ body{
 }
 
 #forum textarea {
-  
+  width: 90%;
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */

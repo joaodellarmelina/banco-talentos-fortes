@@ -85,19 +85,30 @@
     
     <section id="forum" class="form">
       <h2>Enviar de mensagem:</h2>
-        <form class="f1" action="">
+        <form action="">
           <label for="Name">Nome completo:</label>
             <input type="text" required>
           <label for="E-mail">E-mail:</label>
             <input type="email" required>
-        </form>
-        <form class="f2" action="">
           <label for="telefone">Telefone:</label>
             <input type="tel" maxlength="11"> 
           <label for="Assunto">Assunto:</label>
             <input type="text"> 
         </form>
-      
+      <div class="inputBox">
+          <label id="erro" class="erro"
+            >Favor preencha usuário e senha válidos</label
+          >
+          <input type="text" id="login" required />
+
+          <span>Usuário</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input type="password" id="senha" required />
+          <span>Senha</span>
+          <i></i>
+        </div>
         <form action="">
           <label for="explicacao"></label>
             <textarea name="description" id="description" cols="70" rows="10" placeholder="porque você gostaria de acionar o suporte?" required></textarea>
