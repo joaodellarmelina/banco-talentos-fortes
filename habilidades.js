@@ -11,7 +11,7 @@ const profissionaisInput = document.querySelector("#profissionais-input");
 const hobbiesAdd = document.querySelector(".hobbies-add");
 const hobbiesForm = document.querySelector("#hobbies-form");
 const hobbiesInput = document.querySelector("#hobbies-input");
-var newHabilidade = document.createElement = `
+var newHabilidade = `
                 <div class="habilidades-itens">
                   <div>
                     
@@ -43,8 +43,16 @@ removeBtn.forEach((e) => {
   });
 });
 
+function createElement(html, callback) {
+  const element = document.createElement("div");
+  element.innerHTML = html;
+  callback(element);
+}
+
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
   var pessoaisValue = pessoaisInput.value;
-  pessoaisAdd.prependChild(newHabilidade);
+  createElement(newHabilidade, function (e) {
+    pessoaisAdd.parent.append(e);
+  })
 })
