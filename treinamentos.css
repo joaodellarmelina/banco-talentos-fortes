@@ -151,6 +151,9 @@ hr {
 main {
     margin-top: 105px;
 }
+.hr-container {
+  margin-bottom: 3%;
+}
 
 .treinamento-right {
   margin: 0 auto;
@@ -197,11 +200,11 @@ main {
 
 .data2 {
     font-size: 25px;
-    margin-top: 4%;
+    margin-top: 8%;
     font-family: "mohave-bold", sans-serif;
 }
 
-.treinamento-text button {
+.treinamento-img button {
     font-family: "mohave-light", sans-serif;
     font-size: 20px;
     background-color: #0000ff;
@@ -210,11 +213,11 @@ main {
     border-radius: 14px;
     box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;cursor: pointer;
     margin-top: 6%;
-    margin-left: 78%;
+    margin-left: 79.5%;
   
 }
 
-.treinamento-text button:hover {
+.treinamento-img button:hover {
     font-size: 1.4rem;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
