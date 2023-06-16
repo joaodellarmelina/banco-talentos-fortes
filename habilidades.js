@@ -25,7 +25,8 @@ var newHabilidade = `
 function processDiv (divElement) {
   console.log("Processando a div:", divElement);
 }
-var existingDivs = 
+var existingDivs = document.querySelectorAll(".habilidades-itens");
+existingDivs.forEach(processDiv);
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
