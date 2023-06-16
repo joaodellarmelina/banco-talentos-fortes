@@ -37,8 +37,7 @@ addBtn.forEach((e) => {
 });
 
 function saveInput() {
-  var inputValue = this.value;
-  console.log(inputValue);
+  
 }
 
 btnSalvar.addEventListener("click", function () {
