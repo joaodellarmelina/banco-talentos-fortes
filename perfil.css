@@ -262,7 +262,9 @@ body{
 .eventos button:hover{
     font-size: 20.2px;
     color: #ffffff96;
-    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
+box-shadow: rgba(255, 10, 10, 0.61) 0px 8px 24px;
+  background-color: #ff000098;
+  
 }
 
 .eventos p{
