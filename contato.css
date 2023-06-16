@@ -160,9 +160,15 @@ body{
   margin-top: 2%;
 }
 
-div.titulo {
-  background-color: #909090;
+.container h1 {
+  justify-content: center;
   display: flex;
+}
+
+.container p {
+  margin: ;
+  display: flex;
+  
 }
 
 .form-group {
