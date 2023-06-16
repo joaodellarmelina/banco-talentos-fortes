@@ -1,22 +1,23 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Fortes</title>
   <link rel="stylesheet" href="contato.css">
-  <link rel="shortcut icon"
-        href="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/f.png?v=1686110508008"
-        type="image/x-icon" />
+  <link rel="shortcut icon" href="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/f.png?v=1686110508008"
+    type="image/x-icon" />
+  <script src="script-home.js" defer></script>
+  <script type="text/javascript" src="contato.js"></script>
+ 
 </head>
+
 <body>
   <header>
     <a href="./home.html" class="logo">
-      <img
-        src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/FORTES_LOGO.png?v=1685429439681"
-        alt="Logo da empresa Fortes Engenharia"
-      />
+      <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/FORTES_LOGO.png?v=1685429439681"
+        alt="Logo da empresa Fortes Engenharia" />
     </a>
     <div class="paths">
       <a href="habilidades.html">HABILIDADES</a>
@@ -26,11 +27,9 @@
     </div>
     <div class="icons">
       <div class="notificacao">
-        <img
-          id="icone-notifi"
+        <img id="icone-notifi"
           src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-bell.png?v=1685429447309"
-          alt="Ícone de notificação"
-        />
+          alt="Ícone de notificação" />
 
         <div class="notificações" id="bloco-notifi">
           <hr />
@@ -55,93 +54,110 @@
         </div>
       </div>
       <a href="#" class="icon">
-        <img
-          src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-gear.png?v=1685429444420"
-          alt="Ícone de configurações"
-        />
+        <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/icon-gear.png?v=1685429444420"
+          alt="Ícone de configurações" />
       </a>
       <a href="perfil.html" class="profile">
-        <img
-          src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/profile-pic.png?v=1685429453409"
-          alt="Foto de perfil"
-        />
+        <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/profile-pic.png?v=1685429453409"
+          alt="Foto de perfil" />
       </a>
     </div>
   </header>
   <div class="container">
     <div class="titulo">
-      <h1>Entre em contato conosco !!</h1> 
-        <p>Se você tiver alguma dúvida, sugestão, solicitação ou apenas quiser entrar em contato conosco, estamos aqui para ajudar. Sinta-se à vontade para utilizar os canais de  comunicação listados abaixo:</p>
+
+      <h1>Entre em contato conosco</h1>
+
+      <p>Se você tiver alguma dúvida, sugestão ou solicitação, estamos aqui para ajudar.
+        Sinta-se à vontade para utilizar os canais de comunicação listados abaixo:</p>
+
     </div>
-    
+
     <section id="Number" class="tell">
-      <h2>Telefone:</h2> 
-        <dl>
-          <dt>Departamento de Atendimento ao Cliente:</dt>
-          <dd>(27) 9938292929</dd>
-          <dt>Departamento de Vendas:</dt>
-          <dd>(27) 998383838</dd>
-          <dt>Departamento de Suporte Técnico:</dt>
-          <dd>(27) 998321212</dd>
-        </dl>        
+
+      <h2>Telefones e E-mail por departamento:</h2>
+
+      <div class="title-form">
+
+        <h3>Nome departamento</h3>
+        <h3 class="contato-title">Contato</h3>
+
+      </div>
+
+      <hr>
+
+      <dl>
+        <dt>Atendimento ao Cliente:</dt>
+        <dd>(27) 9932-2929 | sac@fortes.com</dd>
+        <dt>Vendas:</dt>
+        <dd>(27) 9983-3838 | vendas@fortes.com</dd>
+        <dt>Suporte Técnico:</dt>
+        <dd>(27) 9983-2212 | suporteTI@fortes.com</dd>
+        <dt>RH</dt>
+        <dd>(27) 3544-1365 | RH@fortes.com</dd>
+      </dl>
+
+
+
     </section>
-    
+
     <section id="forum" class="form">
       <h2>Enviar de mensagem:</h2>
-        <form action="">
-          <div><label for="Name">Nome completo:</label></div>
-          <div><input type="text" required></div>
-          <div><label for="E-mail">E-mail:</label></div>
-          <div><input type="email" required></div>
-          <div><label for="telefone">Telefone:</label></div>
-          <div><input type="tel" maxlength="11"> </div>
-          <div><label for="Assunto">Assunto:</label></div>
-            <div><input type="text"></div>
-        </form>
-      
-        <form action="">
-          <label for="explicacao"></label>
-            <textarea name="description" id="description" cols="70" rows="10" placeholder="porque você gostaria de acionar o suporte?" required></textarea>
-        </form>
+      <form action="">
+        <div><label for="Name">Nome completo:</label></div>
+        <div><input type="text" required></div>
+        <div><label for="E-mail">E-mail:</label></div>
+        <div><input type="email" required></div>
+        <div><label for="telefone">Telefone:</label></div>
+        <div><input type="tel" maxlength="11"> </div>
+
+      </form>
+
+      <form action="">
+        <div><label for="Assunto">Assunto:</label></div>
+        <div><input type="text" maxlength="40"></div>
+        <div><label for="mensagem">Escreva sua mensagem</label></div>
+        <label for="explicacao"></label>
+        <textarea name="area" id="area" cols="70" rows="10" placeholder="Como podemos te ajudar?" required></textarea>
+      </form>
     </section>
-    
-      <button>Enviar</button>
-      <h3> Av. Maruípe, 2793 - Santa Luíza, Vitória - ES, 29045-235</h3>
-    
+
+    <button>Enviar</button>
+    <h3> Av. Maruípe, 2793 - Santa Luíza, Vitória - ES, 29045-235</h3>
+
   </div>
-   <script src="contato.html"></script>
+
+  <div class="fechar-notifi" id="close"></div>
   <footer>
-      <div class="container-1">
-        <div class="footer-logo">
-          <a href="home.html">
-            <img
-              src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/FORTES_LOGO.png?v=1685429439681"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="footer-paths">
-          <a href="#">SOBRE</a>
-          <a href="./index.html">LOGIN</a>
-          <a href="#">NOTÍCIAS</a>
-        </div>
-        <div class="footer-icons">
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-youtube"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-        </div>
+    <div class="container-1">
+      <div class="footer-logo">
+        <a href="home.html">
+          <img src="https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/FORTES_LOGO.png?v=1685429439681"
+            alt="" />
+        </a>
       </div>
-      <div class="container-2">
-        <div class="footer-rights">
-          <span>@UXMasters. All Rights Reserved.</span>
-        </div>
-        <div class="footer-policy">
-          <a href="#">EMPRESA</a>
-          <a href="#">CONTATOS</a>
-          <a href="#">POLÍTICA DE PRIVACIDADE</a>
-        </div>
+      <div class="footer-paths">
+        <a href="#">SOBRE</a>
+        <a href="./index.html">LOGIN</a>
+        <a href="#">NOTÍCIAS</a>
       </div>
-    </footer>
-   <button id="btnTopo" onclick="scrollToTop()">Topo</button>
+      <div class="footer-icons">
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="footer-rights">
+        <span>@UXMasters. All Rights Reserved.</span>
+      </div>
+      <div class="footer-policy">
+        <a href="#">EMPRESA</a>
+        <a href="#">CONTATOS</a>
+        <a href="#">POLÍTICA DE PRIVACIDADE</a>
+      </div>
+    </div>
+  </footer>
+  <button id="btnTopo" onclick="scrollToTop()">Topo</button>
 </body>
 </html>
