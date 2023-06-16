@@ -150,10 +150,6 @@ body{
   background-color: #c0d1f8;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   padding: 40px;
   margin-left: calc(100% - 85%);
@@ -164,7 +160,10 @@ body{
   margin-top: 2%;
 }
 
-
+div.titulo {
+  background-color: #909090;
+  display: flex;
+}
 
 .form-group {
   display: flex;

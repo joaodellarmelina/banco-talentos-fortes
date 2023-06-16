@@ -155,6 +155,8 @@ main {
 .treinamento-right {
     background-color: #c0d1f8;
     border-radius: 10px;
+  width: 100%;
+  max-width:90%;
 }
 
 .treinamento-container {
@@ -173,7 +175,7 @@ main {
 }
 
 .treinamento-text h3 {
-    font-family: mohave-bold;
+    font-family: "mohave-bold",sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
@@ -192,17 +194,17 @@ main {
 .data {
     font-size: 23.5px;
     margin-top: 0px;
-    font-family: mohave-bold;
+    font-family: "mohave-bold", sans-serif;
 }
 
 .data2 {
     font-size: 25px;
     margin-top: 150px;
-    font-family: mohave-bold;
+    font-family: "mohave-bold", sans-serif;
 }
 
 .treinamento-text button {
-    font-family: mohave-light;
+    font-family: "mohave-light", sans-serif;
     font-size: 38px;
     font-weight: 700px;
     background-color: #0000ff;
