@@ -2,6 +2,7 @@ const habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
 const addBtn = document.querySelectorAll(".btn-add");
+const habilidadesBlur = document.querySelector("#blur")
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -27,6 +28,6 @@ removeBtn.forEach((e) => {
 
 addBtn.forEach((e) => {
   e.addEventListener("click", function () {
-    console.log(e);
+    habilidadesBlur.classList.toggle("active");
   })
 })

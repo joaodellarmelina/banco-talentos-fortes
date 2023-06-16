@@ -206,7 +206,12 @@ body{
 }
 
 #forum input {
-  width: 70%;
+  background: #000000;
+  opacity: 0.1;
+  border-radius: 10px;
+  transition: 0.4s;
+  pointer-events: none;
+  z-index: 9;
 }
 
 #forum input:hover {
@@ -216,10 +221,6 @@ body{
   margin-bottom: 10px; /* Espaçamento entre os inputs */
   background-color: #cbcbcb;
   border-radius: 2px;
-}
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i {
-  height: 44px;
 }
 
 #forum h2 {

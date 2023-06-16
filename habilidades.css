@@ -260,6 +260,12 @@ footer {
   border-radius: 25px;
 }
 
+.habilidades#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-sele
+}
+
 .habilidades-title {
   padding-bottom: 50px;
   display: flex;
