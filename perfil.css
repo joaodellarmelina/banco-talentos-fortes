@@ -156,8 +156,8 @@ body{
 .container {
   width: 60%;
   align-items: center;
-  margin: 20px auto;
-  margin-bottom: 40px;
+  margin: 40px auto;
+  margin-bottom: 60px;
   padding: 20px;
   border-radius: 10px;
   background-color: white;
@@ -179,6 +179,10 @@ body{
   object-fit: cover;
 }
 
+#dados div {
+  margin-top: 4.5%;
+}
+
 #dados hr {
   width: 15px;
   height: 20px;
@@ -188,7 +192,8 @@ body{
 
 
 #dados2 {
-  margin-top: 200px;
+  margin-top: 175px;
+  padding: 0 4%;
   
 }
 
@@ -197,7 +202,13 @@ body{
   padding: 15px;
   border: 0.1rem solid;
   border-color: #DDDDDD;
-  display: flex;
+}
+
+
+
+#dados3 {
+  margin-top: 200px;
+  
 }
 
 .eventos img{

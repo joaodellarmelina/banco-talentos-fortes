@@ -51,10 +51,8 @@ addBtn.forEach((e) => {
 function submitForm() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+    form.reset();
     inputValue = inputField.value;
-    if () {
-      
-    }
   });
 }
 
@@ -74,3 +72,5 @@ btnCancelar.addEventListener("click", function () {
   inputContainer.style.display = "none";
   habilidadesBlur.classList.toggle("active");
 });
+
+console.log(newHabilidade);
