@@ -1,3 +1,4 @@
+const habilidadesContainer = document.querySelectorAll(".habilidades-container");
 const habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
@@ -22,20 +23,20 @@ var newHabilidade = `
                 </div>
                 `;
 
-function processDiv (divElement) {
-  console.log("Processando a div:", divElement);
-}
-var existingDivs = document.querySelectorAll(".habilidades-itens");
-existingDivs.forEach(processDiv);
 
-habilidadesItens.forEach((e) => {
-  e.addEventListener("mouseover", function () {
-    e.lastElementChild.style.display = "block";
-  });
-  e.addEventListener("mouseout", function () {
-    e.lastElementChild.style.display = "none";
-  });
-});
+habilidadesContainer.addEventListener("mouseover", function (e) {
+  e.
+})
+
+
+// habilidadesItens.forEach((e) => {
+//   e.addEventListener("mouseover", function () {
+//     e.lastElementChild.style.display = "block";
+//   });
+//   e.addEventListener("mouseout", function () {
+//     e.lastElementChild.style.display = "none";
+//   });
+// });
 
 removeBtn.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -66,5 +67,4 @@ pessoaisForm.addEventListener("submit", function (e) {
   var pessoaisSpan =
     pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
   pessoaisSpan.textContent = pessoaisValue;
-  processDiv(newHabilidade);
 });
