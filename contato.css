@@ -23,6 +23,7 @@
 }
 
 header {
+  background-color: white;
   font-family: "Mohave", sans-serif;
   display: flex;
   align-items: center;
@@ -104,7 +105,7 @@ header {
 }
 
 div.notificações {
-  font-family: mohave-light;
+  font-family: mohave, sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
@@ -145,10 +146,8 @@ hr {
   height: 60px;
   border-radius: 50%;
 }
+
 /*contatos página*/
-header{
-  background-color: white;
-}
 body{
   background-color: #c0d1f8;
 }
@@ -158,8 +157,9 @@ body{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   margin-left: calc(100% - 85%);
+  margin-bottom: 40px;
   background: #ffffff;
   width: 70%;
   max-width: 100%;
