@@ -207,7 +207,23 @@ body{
   border-color: #DDDDDD;
 }
 
+.ev1 {
+  display: flex;
+}
 
+.ev1 div {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.ev2 {
+  display: flex;
+}
+
+.ev2 div {
+  margin-top: 60px;
+  margin-left: 15px;
+}
 
 #dados3 {
   margin-top: 60px;
@@ -215,10 +231,14 @@ body{
   
 }
 
+#dados3 h2 {
+  margin-bottom: 20px;
+}
+
 #dados3 div img {
   display: flex;
   border-radius: 12px;
-  margin-top: 50px;
+  margin-bottom: 50px;
   width: 400px;
   height: 250px;
  

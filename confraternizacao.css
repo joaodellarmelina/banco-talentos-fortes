@@ -302,7 +302,13 @@ footer {
   margin-top: 50px;
 }
 
-.
+.inscrever:hover
+{
+  font-size: 25.4px;
+      color: #ffffff96;
+    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
+  
+}
 
 /*BackToTop*/
 

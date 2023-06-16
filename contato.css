@@ -272,7 +272,6 @@ section {
   background-color: #229aaf20;
 }
 
-
 .container button {
   font-family: mohave, sans-serif;
   font-size: 22.2px;
@@ -377,11 +376,10 @@ footer {
   width: 60px;
   height: 60px;
   background-color: #7750ee;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   opacity: 0.8;
   cursor: pointer;
   transition: opacity 0.3s, visibility 0.3s;
 }
-
