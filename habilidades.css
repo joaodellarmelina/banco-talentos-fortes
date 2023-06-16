@@ -263,7 +263,7 @@ footer {
 .habilidades#blur.active {
   filter: blur(20px);
   pointer-events: none;
-  user-sele
+  user-select: none;
 }
 
 .habilidades-title {
@@ -363,7 +363,8 @@ footer {
   transform: translate(-50%, -50%);
   padding: 50px;
   background: #ffffff;
-  display: flex;
+  display: none;
+  flex-direction: column.
   justify-content: center;
   box-shadow: rgba(10, 10, 255, 0.5) 0px 8px 24px;
   border-radius: 15px;
