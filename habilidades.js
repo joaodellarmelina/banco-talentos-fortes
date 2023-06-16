@@ -36,10 +36,10 @@ addBtn.forEach((e) => {
   });
 });
 
-inputField.addEventListener("submit", function () {
+function saveInput() {
   var inputValue = this.value;
   console.log(inputValue);
-})
+}
 
 btnSalvar.addEventListener("click", function () {
   inputContainer.style.display = "none";

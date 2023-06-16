@@ -436,8 +436,13 @@ footer {
   &:required,&:invalid { box-shadow:none; }
 }
 
+.input-btns {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
 .btn {
-  margin-top: 80px;
   font-size: 25px;
   font-weight: 500;
   padding: 5px 15px;
@@ -456,10 +461,9 @@ footer {
   box-shadow: #db181866 0px 8px 24px;
 }
 
-
-
 .btn.salvar {
   background: #11911a;
   padding: 5px 26px;
   box-shadow: #11911a66 0px 8px 24px;
+  margin-left: auto;
 }

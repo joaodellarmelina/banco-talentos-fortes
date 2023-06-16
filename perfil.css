@@ -29,7 +29,7 @@ header {
   justify-content: space-between;
   padding: 0 15px;
   border-bottom: 1px solid #000000;
-  
+  background-color: white;
 }
 
 .paths a {
@@ -149,10 +149,6 @@ hr {
 
 /* Inserindo os detalhes do prefil*/
 
-header{
-  background-color: white;
-}
-
 body{
   background-color: #c0d1f8;
 
@@ -181,11 +177,6 @@ body{
 
 .info {
   flex-grow: 1;
-}
-
-hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 #border

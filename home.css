@@ -104,7 +104,7 @@ header {
 }
 
 div.notificações {
-  font-family: mohave-light;
+  font-family: "mohave-light", sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
