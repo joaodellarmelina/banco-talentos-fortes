@@ -153,10 +153,10 @@ main {
 }
 
 .treinamento-right {
-    background-color: #c0d1f8;
-    border-radius: 10px;
+  background-color: #c0d1f8;
+  border-radius: 10px;
   width: 100%;
-  max-width:90%;
+  max-width: 960px;
 }
 
 .treinamento-container {
@@ -261,7 +261,7 @@ main {
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 50px;
     margin-bottom: 10px;
     margin-top: 100px;
@@ -271,7 +271,7 @@ main {
 }
 
 .hr-text h1 {
-    font-family: mohave-bold;
+    font-family: "mohave-bold",;
     font-size: 60px;
     font-weight: 300px;
 
@@ -279,7 +279,7 @@ main {
 
 .hr-container p {
     font-size: 25px;
-    font-family: mohave-light;
+    font-family: "mohave-light", sans-serif;
     text-align: center;
     padding-top: 60px;
 }
