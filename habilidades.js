@@ -52,8 +52,11 @@ function createElement(html, callback) {
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
   var pessoaisValue = pessoaisInput.value;
+  var newElement = document.createRange().createContextualFragment(newHabilidade);
   var pessoaisParent = pessoaisAdd.parentNode;
-  pessoaisParent.insertBefore(newHabilidade, pessoaisAdd);
-  var pessoaisSpan = newHabilidade.firstChild.nextSibling.firstChild;
-  pessoaisSpan.textContent = pessoaisValue;
+  pessoaisParent.insertBefore(newElement, pessoaisAdd);
+  var pessoaisSpan = newHabilidade.firstElementChild;
+  // pessoaisSpan.textContent = pessoaisValue.toString();
+  console.log(newHabilidade);
+  console.log(pessoaisSpan);
 })
