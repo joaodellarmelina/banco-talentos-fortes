@@ -24,7 +24,6 @@
 
 header {
   background-color: white;
-  font-family: "Mohave", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,7 +104,6 @@ header {
 }
 
 div.notificações {
-  font-family: mohave, sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
@@ -182,6 +180,8 @@ textarea {
   padding-left: 20px; /* Espaçamento à esquerda */
   padding-right: 10px; /* Espaçamento à direita */
   margin-bottom: 10px; /* Espaçamento entre os inputs */
+  background-color: #cbcbcb;
+  border-radius: 2px;
 }
 
 label{
@@ -208,11 +208,6 @@ label{
     font-size: 22.2px;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
-}
-
-input, textarea{
-  background-color: #cbcbcb;
-  border-radius: 2px;
 }
 
 /* Footer */
