@@ -112,11 +112,11 @@ div.notificações {
   margin-top: 20px;
 }
 
-h3 {
+#bloco-notifi h3 {
   margin-top: 15px;
 }
 
-hr {
+#bloco-notifi hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -151,7 +151,6 @@ hr {
 
 body{
   background-color: #c0d1f8;
-
 }
 
 .container {
@@ -163,6 +162,8 @@ body{
   margin-top: 20px;
   border-radius: 10px;
 }
+
+
 
 .container img {
   width: 250px;

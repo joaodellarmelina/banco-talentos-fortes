@@ -37,15 +37,22 @@ addBtn.forEach((e) => {
   });
 });
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var inputValue = inputField.value;
-  console.log(inputValue);
+function submitForm() {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var inputValue = inputField.value;
+    console.log(inputValue);
+  });
+};
+
+inputField.addEventListener("keypress", function (e) {
+  if ()
 })
 
 btnSalvar.addEventListener("click", function (e) {
+  submitForm();
   inputContainer.style.display = "none";
-  habilidadesBlur.classList.toggle("active");  
+  habilidadesBlur.classList.toggle("active");
 });
 
 btnCancelar.addEventListener("click", function () {
