@@ -4,6 +4,9 @@ const removeBtn = document.querySelectorAll(".remove-button");
 const addBtn = document.querySelectorAll(".btn-add");
 const habilidadesBlur = document.querySelector("#blur");
 const inputContainer = document.querySelector(".input-container");
+const btnSalvar = document.querySelector(".salvar");
+const btnCancelar = document.querySelector(".cancelar");
+const inputField = document.querySelector(".form-field");
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -26,10 +29,24 @@ removeBtn.forEach((e) => {
   });
 });
 
-
 addBtn.forEach((e) => {
   e.addEventListener("click", function () {
     habilidadesBlur.classList.toggle("active");
     inputContainer.style.display = "flex";
-  })
+  });
+});
+
+inputField.addEventListener("submit", function () {
+  
 })
+
+btnSalvar.addEventListener("click", function () {
+  inputContainer.style.display = "none";
+  habilidadesBlur.classList.toggle("active");
+  
+});
+
+btnCancelar.addEventListener("click", function () {
+  inputContainer.style.display = "none";
+  habilidadesBlur.classList.toggle("active");
+});

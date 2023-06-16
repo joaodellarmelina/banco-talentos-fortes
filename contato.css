@@ -192,9 +192,11 @@ body{
 }
 
 /* formulario */
-#forum form {
-  display: flex;
-  flex-wrap: wrap;
+
+#forum div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 #forum label {

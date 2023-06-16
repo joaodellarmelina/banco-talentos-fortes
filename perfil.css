@@ -192,7 +192,7 @@ hr {
 {
   border: solid;
   border-color: rgb(65, 67, 70);
-  flex-warp: nowarp;
+  display: flex;
   margin: 20px;
   margin-right: 100px;
   margin-top: -10px;

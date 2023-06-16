@@ -446,12 +446,15 @@ footer {
 .btn {
   font-size: 25px;
   font-weight: 500;
-  
   padding: 5px 15px;
   border-radius: 15px;
   color: #ffffff;
   cursor: pointer;
+}
 
+.btn:hover {
+  transition: 0.2s;
+  transform: scale(1.005);
 }
 
 .btn.cancelar {
@@ -462,11 +465,7 @@ footer {
 
 
 .btn.salvar {
-
   background: #11911a;
   padding: 5px 26px;
-  border-radius: 15px;
-  color: #ffffff;
-  cursor: pointer;
   box-shadow: #11911a66 0px 8px 24px;
 }
