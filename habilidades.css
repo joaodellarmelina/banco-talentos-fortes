@@ -364,22 +364,28 @@ footer {
   padding: 50px;
   background: #ffffff;
   display: none;
-  flex-direction: column.
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-shadow: rgba(10, 10, 255, 0.5) 0px 8px 24px;
   border-radius: 15px;
+}
+
+.input-container h2 {
+  font-size: 35px;
+  font-weight: 500;
 }
 
 .form-group {
   position: relative;
   padding: 21px 0 0;
   margin-top: 10px;
-  width: 50%;
+  width: 80%;
 }
 
 .form-field {
   font-family: inherit;
-  width: 200%;
+  width: 100%;
   border: 0;
   border-bottom: 2px solid #000000;
   outline: 0;
@@ -430,3 +436,28 @@ footer {
   &:required,&:invalid { box-shadow:none; }
 }
 
+.input-btns {
+  padding-top: 20px;
+}
+
+.btn-cancelar {
+  font-size: 30px;
+  font-weight: 500;
+  background: rgba(0, 0, 255, 0.9);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.btn-salvar {
+  font-size: 30px;
+  font-weight: 500;
+  background: rgba(0, 0, 255, 0.9);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}

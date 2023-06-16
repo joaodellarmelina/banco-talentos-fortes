@@ -220,20 +220,29 @@ section h2 {
   padding-bottom: 12px;
 }
 
-
+#forum textarea {
+  width: 60%;
+  padding-left: 20px; /* Espaçamento à esquerda */
+  padding-right: 10px; /* Espaçamento à direita */
+  margin-bottom: 10px; /* Espaçamento entre os inputs */
+  background-color: #cbcbcb;
+  border-radius: 2px;
+}
+button {
+  
+  display: flex;
+  justify-content: end;
+}
 .container button {
   font-family: mohave, sans-serif;
   font-size: 22px;
-  font-weight: 700px;
   background-color: #0000ff;
   color: #ffffff;
   padding: 10px 30px;
   border-radius: 15px;
-  margin-top: 50px;
   box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
   cursor: pointer;
   margin-top: 5px;
-  margin-left: calc(100% - 60%);
 }
 
 .container button:hover{

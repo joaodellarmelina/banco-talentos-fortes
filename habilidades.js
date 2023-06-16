@@ -16,10 +16,10 @@ habilidadesItens.forEach((e) => {
 
 removeBtn.forEach((e) => {
   e.addEventListener("mouseover", function () {
-    e.previousElementSibling.classList.add("remove");
+    e.previousElementSibling.classList.toggle("remove");
   });
   e.addEventListener("mouseout", function () {
-    e.previousElementSibling.classList.remove("remove");
+    e.previousElementSibling.classList.toggle("remove");
   });
   e.addEventListener("click", function () {
     e.parentElement.remove();
