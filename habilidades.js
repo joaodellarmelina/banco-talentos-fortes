@@ -1,4 +1,6 @@
-const habilidadesContainer = document.querySelectorAll(".habilidades-container");
+const habilidadesContainer = document.querySelectorAll(
+  ".habilidades-container"
+);
 const habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
@@ -23,11 +25,19 @@ var newHabilidade = `
                 </div>
                 `;
 
-
-habilidadesContainer.addEventListener("mouseover", function (e) {
-  e.
-})
-
+habilidadesContainer.forEach((div) => {
+  div.addEventListener("mouseover", function (e) {
+    if (e.target.classList.contains("habilidades-itens")) {
+      e.target.lastElementChild.style.display = "block";
+    }
+  });
+  div.addEventListener("mouseout", function (e) {
+    if (e.target.parentElement.classList.contains("habilidades-itens")) {
+      console.log(e.target.lastElementChild)
+    // e.target.lastElementChild.style.display = "none";
+      }
+  });
+});
 
 // habilidadesItens.forEach((e) => {
 //   e.addEventListener("mouseover", function () {
@@ -49,12 +59,6 @@ removeBtn.forEach((e) => {
     e.parentElement.remove();
   });
 });
-
-function createElement(html, callback) {
-  const element = document.createElement("div");
-  element.innerHTML = html;
-  callback(element);
-}
 
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
