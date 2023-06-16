@@ -146,44 +146,55 @@ hr {
     border-radius: 50%;
 }
 
+
 /* EXLUSIVO DE EVENTOS */
-
 main {
-    margin-top: 105px;
+  margin-top: 105px;
+}
+.hr-container {
+  margin-bottom: 6%;
 }
 
-.evento-right {
-    background-color: #c0d1f8;
-    border-radius: 10px;
+.eventos-right {
+  margin: 0 auto;
+  background-color: #c0d1f8;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 6.5%;
 }
 
-.evento-container {
+.eventos-left {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 6%;
+}
+
+.eventos-container {
     display: flex;
-    padding: 80px 6%;
+    padding: 70px 6%;
 }
 
-.evento-text {
+.eventos-text {
     width: 50%;
     align-self: center;
     padding-right: 35px;
 }
 
-.evento-text.left {
+.eventos-text.left {
     padding: 0 0 0 35px;
 }
 
-.evento-text h3 {
-    font-family: mohave-bold;
+.eventos-text h3 {
+    font-family: "mohave-bold",sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
 
-.evento-text p {
-    padding: 20px 0;
-    font-family: mohave-light;
+.eventos-text p {
+    font-family: "mohave-light", sans-serif;
     font-size: 30px;
-    text-align: center;
-    font-weight: 400px;
     text-align: justify;
     margin-top: 30px;
 
@@ -192,53 +203,51 @@ main {
 .data {
     font-size: 23.5px;
     margin-top: 0px;
-    font-family: mohave-bold;
+    font-family: "mohave-bold", sans-serif;
 }
 
 .data2 {
     font-size: 25px;
-    margin-top: 150px;
-    font-family: mohave-bold;
+    margin-top: 8%;
+    font-family: "mohave-bold", sans-serif;
 }
 
-.evento-text button {
-    font-family: mohave-light;
-    font-size: 38px;
-    font-weight: 700px;
+.eventos-img button {
+    font-family: "mohave-light", sans-serif;
+    font-size: 20px;
     background-color: #0000ff;
     color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 15px;
-    margin-top: 50px;
-    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
-    cursor: pointer;
-    margin-top: 70px;
-    margin-left: 250px;
+    padding: 1.5% 4%;
+    border-radius: 14px;
+    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;cursor: pointer;
+    margin-top: 6%;
+    margin-left: 79%;
+  
 }
 
-.evento-text button:hover {
-    font-size: 38.2px;
+.eventos-img button:hover {
+    font-size: 1.3rem;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
 }
 
-.evento-text a {
+.eventos-text a {
     color: #0000ffc9;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.evento-text a:hover {
+.eventos-text a:hover {
     color: #0000ff77;
 
 }
 
-.evento-img {
+.eventos-img {
     width: 50%;
     margin-top: 50px;
 }
 
-.evento-img img {
+.eventos-img img {
     width: 94%;
     height: 80%;
     border-radius: 10px;
@@ -248,7 +257,7 @@ main {
     margin-left: 50px;
 }
 
-.evento-img img:hover {
+.eventos-img img:hover {
     width: 94.5%;
     height: 80.5%;
     box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
@@ -256,10 +265,10 @@ main {
 
 .hr-text {
     position: absolute;
-    top: -150px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 50px;
     margin-bottom: 10px;
     margin-top: 100px;
@@ -268,7 +277,7 @@ main {
 }
 
 .hr-text h1 {
-    font-family: mohave-bold;
+    font-family: "mohave-bold",;
     font-size: 60px;
     font-weight: 300px;
 
@@ -276,35 +285,39 @@ main {
 
 .hr-container p {
     font-size: 25px;
-    font-family: mohave-light;
+    font-family: "mohave-light", sans-serif;
     text-align: center;
     padding-top: 60px;
 }
 
 .nav-pages {
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    cursor: pointer;
-    width: 197px;
-    position: relative;
-    left: 40%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 3%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-pages ol {
+  font-size: 28px;
 }
 
 .nav-pages a {
-    font-size: 25px;
-    color: black;
-    font-family: mohave-bold;
-    margin: 10px;
+  font-size: 25px;
+  color: black;
+  font-family: "mohave-bold", sans-serif;
+  margin: 10px;
+  transition: 0.3s;
 }
 
-.evento-right {
-    margin: 80px;
-
+.nav-pages a:hover {
+  opacity: 0.5;
+  font-size: 28px;
+  color: black;
+  font-family: "mohave-bold", sans-serif;
+  margin: 10px;
 }
-
 
 
 /* Footer */
