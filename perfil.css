@@ -181,6 +181,7 @@ body{
 
 #dados div p {
   padding-left: 4px;
+  font-size: 1.35em;
 }
 
 #dados hr {
@@ -190,11 +191,13 @@ body{
 }
 
 
-
 #dados2 {
   margin-top: 175px;
   padding: 0 4%;
-  
+}
+
+#dados2 div {
+  font-size: 1.2em;
 }
 
 #border {
@@ -207,20 +210,17 @@ body{
 
 
 #dados3 {
-  margin-top: 175px;
+  margin-top: 60px;
   padding: 0 4%;
   
 }
 
 #dados3 div img {
   display: flex;
-}
-
-#dados3 img{
- border-radius: 0px;
- margin-top: 50px;
- width: 450px;
- height: 250px;
+  border-radius: 12px;
+  margin-top: 50px;
+  width: 400px;
+  height: 250px;
  
 }
 

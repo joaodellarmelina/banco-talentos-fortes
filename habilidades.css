@@ -331,23 +331,26 @@ footer {
   cursor: pointer;
 }
 
-.habilidades-add {
-  padding: 0 0 10px 20px;
+.pessoais-add,
+.profissionais-add,
+.hobbies-add {
+  padding: 10px 40px 20px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
-.btn-add {
-  font-size: 30px;
-  font-weight: 500;
-  background: rgba(0, 0, 255, 0.9);
-  padding: 5px 15px;
-  border-radius: 15px;
-  color: #ffffff;
-  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
-  cursor: pointer;
+.pessoais-add div,
+.profissionais-add div,
+.hobbies-add div {
+  padding: 0 15px;
+  border-radius: 20px;
+  border: 4px solid rgba(0, 0, 255, 0.8);
+  box-shadow: rgba(10, 10, 255, 0.15) 0px 8px 24px;
 }
 
-.btn-add:hover {
-  transform: scale(1.005);
-  background: rgba(0, 0, 255, 0.8);
+.pessoais-add input,
+.profissionais-add input,
+.hobbies-add input {
+  font-size: 32px;
 }
 
