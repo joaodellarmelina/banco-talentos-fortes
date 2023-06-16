@@ -1,0 +1,238 @@
+/* Adiciona as fontes Mohave, Montserrat e Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mohave:wght@300;400;500&family=Montserrat:wght@400;700&display=swap");
+
+@font-face {
+  font-family: mohave-light;
+  src: local(mohave),
+    url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Light.ttf?v=1685755286929);
+}
+
+@font-face {
+  font-family: mohave-bold;
+  src: local(fonts),
+    url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Mohave-Bold.ttf?v=1685755293115);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Mohave", sans-serif;
+}
+
+header {
+  font-family: "Mohave", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid #000000;
+}
+
+.paths a {
+  padding: 0 50px;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.paths a:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 197px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  width: 197px;
+}
+
+.icon {
+  height: 24px;
+  padding: 0 25px 0 7px;
+}
+
+.icon img {
+  height: 24px;
+}
+
+#icone-notifi {
+  height: 24px;
+}
+
+#icone-notifi:hover {
+  transform: scale(1.05);
+}
+
+/* POP UP NOTIFICAÇÃO */
+
+.notificações {
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 350px;
+  height: 550px;
+  position: absolute;
+  top: 1;
+  right: 0;
+  margin-left: auto;
+  z-index: 1;
+  border: 1px solid black;
+  border-top: none;
+  display: none;
+}
+
+.notificacao {
+  height: 24px;
+}
+
+.notificacao:hover .notificações {
+  display: block;
+}
+
+div.notificações {
+  font-family: mohave-light;
+  text-align: center;
+  display: flexbox;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.5em;
+}
+
+.fechar-notifi {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.profile {
+  height: 60px;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Inserindo os detalhes do prefil*/
+
+body{
+  background-color: #c0d1f8;
+
+}
+
+.container {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+.container img {
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -1260px;
+}
+
+
+.info {
+  flex-grow: 1;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#border
+{
+  border: solid;
+  border-color: rgb(65, 67, 70);
+  display: flex;
+  margin: 20px;
+  margin-right: 100px;
+  margin-top: -10px;
+  padding: 15px;
+}
+
+.eventos img{
+ border-radius: 0px;
+ margin-top: 50px;
+ margin-left: -260px;
+ width: 550px;
+ height: 350px;
+ 
+}
+
+.eventos button {
+  font-family: mohave, sans-serif;
+  font-size: 20px;
+  font-weight: 700px;
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.eventos button:hover{
+    font-size: 20.2px;
+    color: #ffffff96;
+    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
+}
+
+.eventos p{
+  font-size: 20px;
+}
+
+.eventos hr{
+  width: 1010px;
+  margin-left: -288px;
+}
+
+#buttonum{
+  margin-left: -270px;
+}
