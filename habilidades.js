@@ -52,5 +52,8 @@ function createElement(html, callback) {
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
   var pessoaisValue = pessoaisInput.value;
-  newHabilidade.firstChild.nextSibling.firstChild;
+  var pessoaisParent = pessoaisAdd.parentNode;
+  pessoaisParent.insertBefore(newHabilidade, pessoaisAdd);
+  var pessoaisSpan = newHabilidade.firstChild.nextSibling.firstChild;
+  pessoaisSpan.textContent = pessoaisValue;
 })
