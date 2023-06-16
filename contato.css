@@ -165,10 +165,14 @@ body{
   display: flex;
 }
 
-.container p {
-  margin: ;
-  display: flex;
-  
+.titulo p {
+  margin: 10px 80px ;
+  display: flex; 
+}
+
+.tell {
+  padding-top: 4%;
+  margin:
 }
 
 .form-group {
