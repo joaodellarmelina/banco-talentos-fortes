@@ -8,6 +8,17 @@ const btnSalvar = document.querySelector(".salvar");
 const btnCancelar = document.querySelector(".cancelar");
 const form = document.querySelector(".form-group");
 const inputField = document.querySelector(".form-field");
+var inputValue;
+var newHabilidade = (document.createElement = `
+                <div class="habilidades-itens">
+                  <div>
+                    <span>${inputValue}</span>
+                  </div>
+                  <a class="remove-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                </div>
+                `);
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -40,16 +51,18 @@ addBtn.forEach((e) => {
 function submitForm() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    var inputValue = inputField.value;
-    habilidadesItens.innerHTML = inputValue;
+    inputValue = inputField.value;
+    if () {
+      
+    }
   });
-};
+}
 
 inputField.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     submitForm();
   }
-})
+});
 
 btnSalvar.addEventListener("click", function (e) {
   submitForm();
@@ -61,14 +74,3 @@ btnCancelar.addEventListener("click", function () {
   inputContainer.style.display = "none";
   habilidadesBlur.classList.toggle("active");
 });
-
-
-createElement = `<div class="habilidades-itens">
-                  <div>
-                    <span>Netflix</span>
-                  </div>
-                  <a class="remove-button">
-                    <i class="fa-solid fa-xmark"></i>
-                  </a>
-                </div>
-                `

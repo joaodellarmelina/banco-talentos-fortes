@@ -154,27 +154,27 @@ body{
 }
 
 .container {
-  background-color: white;
   width: 60%;
-  margin: 0 auto;
-  padding: 20px;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  padding: 20px;
   border-radius: 10px;
+  background-color: white;
 }
 
 #dados {
   max-width: 960px;
-  display: flex;
-  margin: 0 auto;
-  padding: 0 4%;
   height: 170px;
+  margin: 4% auto;
+  padding: 0 4%;
+  display: flex;
 } 
 
 #dados img {
   width: 250px;
   height: 250px;
-  margin-right: 20px;
+  margin-right: 40px;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -187,25 +187,17 @@ body{
 
 
 
-
 #dados2 {
   margin-top: 200px;
+  
 }
 
-.info {
-  flex-grow: 1;
-}
-
-
-#border
-{
-  border: solid;
-  border-color: rgb(65, 67, 70);
-  display: flex;
-  margin: 20px;
-  margin-right: 100px;
-  margin-top: -10px;
+#border {
+  margin: 0 auto;
   padding: 15px;
+  border: 0.1rem solid;
+  border-color: #DDDDDD;
+  display: flex;
 }
 
 .eventos img{
