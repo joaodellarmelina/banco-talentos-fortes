@@ -163,17 +163,34 @@ body{
   border-radius: 10px;
 }
 
+#dados {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+} 
 
-
-.container img {
+#dados img {
   width: 250px;
   height: 250px;
   margin-right: 20px;
-  border-radius: 50%;
+  border-radius: 5px;
   object-fit: cover;
-  margin-top: -1260px;
 }
 
+#dados hr {
+  width: 15px;
+  height: 20px;
+  color: #C7C7C7;
+}
+
+
+
+
+#dados2 {
+  margin-top: 200px;
+}
 
 .info {
   flex-grow: 1;

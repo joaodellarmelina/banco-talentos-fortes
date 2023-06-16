@@ -41,12 +41,14 @@ function submitForm() {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var inputValue = inputField.value;
-    console.log(inputValue);
+    habilidadesItens.innerHTML = inputValue;
   });
 };
 
 inputField.addEventListener("keypress", function (e) {
-  if ()
+  if (e.key === "Enter") {
+    submitForm();
+  }
 })
 
 btnSalvar.addEventListener("click", function (e) {
@@ -59,3 +61,14 @@ btnCancelar.addEventListener("click", function () {
   inputContainer.style.display = "none";
   habilidadesBlur.classList.toggle("active");
 });
+
+
+createElement = `<div class="habilidades-itens">
+                  <div>
+                    <span>Netflix</span>
+                  </div>
+                  <a class="remove-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                </div>
+                `
