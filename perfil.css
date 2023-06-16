@@ -104,7 +104,7 @@ header {
 }
 
 div.notificações {
-  font-family: mohave-light;
+  font-family: mohave,sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
@@ -147,6 +147,10 @@ hr {
 }
 
 /* Inserindo os detalhes do prefil*/
+
+header{
+  background: white;
+}
 
 body{
   background-color: #c0d1f8;
@@ -235,4 +239,72 @@ hr {
 
 #buttonum{
   margin-left: -270px;
+}
+/*footer*/
+footer {
+  background-color: #cacaca;
+  height: 165px;
+  bottom: 0;
+  padding: 0 8%;
+}
+
+.container-1 {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #85b2da;
+}
+
+.footer-logo img {
+  width: 146px;
+  padding-top: 20px;
+}
+
+.footer-paths {
+  padding-left: 20px;
+}
+
+.footer-paths a {
+  padding: 12px;
+  color: #666666;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-icons {
+  margin-left: auto;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.footer-icons i {
+  font-size: 24px;
+  color: #666666;
+  padding: 0 10px;
+}
+
+.container-2 {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-rights span {
+  color: #666666;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-policy a {
+  padding: 0 15px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-policy a:nth-child(3) {
+  padding-right: 0;
 }
