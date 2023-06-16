@@ -70,15 +70,15 @@ profissionaisForm.addEventListener("submit", function (e) {
   profissionaisSpan.textContent = profissionaisValue;
 });
 
-pessoaisForm.addEventListener("submit", function (e) {
+hobbiesForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  var pessoaisValue = pessoaisInput.value;
+  var hobbiesValue = hobbiesInput.value;
   var newElement = document
     .createRange()
     .createContextualFragment(newHabilidade);
-  var pessoaisParent = pessoaisAdd.parentNode;
-  pessoaisParent.insertBefore(newElement, pessoaisAdd);
-  var pessoaisSpan =
-    pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
-  pessoaisSpan.textContent = pessoaisValue;
+  var hobbiesParent = hobbiesAdd.parentNode;
+  hobbiesParent.insertBefore(newElement, hobbiesAdd);
+  var hobbiesSpan =
+    hobbiesAdd.previousElementSibling.firstElementChild.firstElementChild;
+  hobbiesSpan.textContent = hobbiesValue;
 });

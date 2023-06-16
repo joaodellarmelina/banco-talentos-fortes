@@ -252,9 +252,9 @@ hr {
 }
 
 .evento-right {
+  display: flex;
+  justify-content: center;
   background-color: #c0d1f8;
-  width: 83%;
-  margin-left: 150px;
   border-radius: 10px;
 }
 
@@ -295,7 +295,6 @@ hr {
 .evento-text button {
   font-family: mohave, sans-serif;
   font-size: 38px;
-  font-weight: 700px;
   background-color: #0000ff;
   color: #ffffff;
   padding: 10px 30px;
@@ -321,12 +320,6 @@ hr {
   margin-top: 40px;
   margin-left: 50px;
 }
-
-.evento-img img:hover {
-  width: 94.5%;
-  box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
-}
-
 
 /* Footer */
 
