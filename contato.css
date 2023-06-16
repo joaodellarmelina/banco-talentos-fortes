@@ -235,15 +235,9 @@ body {
 }
 
 #forum input {
-  width: 70%;
-  height: 70%;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-bottom: 20px;
-  background-color: #229aaf8f;
-  border-radius: 2px;
-  border: none;
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
 }
 
 
@@ -260,7 +254,7 @@ body {
 section h2 {
   padding-top: 2%;
   padding-bottom: 5px;
-  font-family: mohave-light;
+  font-family: "mohave-light", sans-serif;
   text-align: center;
 }
 
@@ -269,36 +263,13 @@ section {
 }
 
 #forum textarea {
-  font-size: 20px;
-  font-family: sans-serif;
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
 }
 
 #forum textarea:focus {
-  background-color: #229aaf57;
-}
-
-#forum textarea#area {
-  width: 70%;
-  height: 70%;
-  font-size: 20px;
-  padding-left: 1%;
-  padding-top: 1%;
-  margin-bottom: 20px;
-  background-color: #DEDEDE;
-  border-radius: 2px;
-  border: none;
-}
-
-#forum textarea#area:hover {
-  width: 70%;
-  height: 70%;
-  font-size: 20px;
-  padding-left: 1%;
-  padding-top: 1%;
-  margin-bottom: 20px;
-  background-color: #DDDDDD;
-  border-radius: 2px;
-  border: none;
+  background-color: #229aaf20;
 }
 
 

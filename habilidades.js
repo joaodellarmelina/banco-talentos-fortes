@@ -55,6 +55,7 @@ pessoaisForm.addEventListener("submit", function (e) {
   var pessoaisSpan =
     pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
   pessoaisSpan.textContent = pessoaisValue;
+  pessoaisForm.reset();
 });
 
 profissionaisForm.addEventListener("submit", function (e) {
@@ -68,6 +69,7 @@ profissionaisForm.addEventListener("submit", function (e) {
   var profissionaisSpan =
     profissionaisAdd.previousElementSibling.firstElementChild.firstElementChild;
   profissionaisSpan.textContent = profissionaisValue;
+  proForm.reset();
 });
 
 hobbiesForm.addEventListener("submit", function (e) {
