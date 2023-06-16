@@ -1,7 +1,7 @@
 const habilidadesContainer = document.querySelectorAll(
   ".habilidades-container"
 );
-const habilidadesItens = document.querySelectorAll(".habilidades-itens");
+var habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
 const addBtn = document.querySelectorAll(".btn-add");
@@ -25,28 +25,30 @@ var newHabilidade = `
                 </div>
                 `;
 
-habilidadesContainer.forEach((div) => {
-  div.addEventListener("mouseover", function (e) {
-    if (e.target.classList.contains("habilidades-itens")) {
-      e.target.lastElementChild.style.display = "block";
-    }
-  });
-  div.addEventListener("mouseout", function (e) {
-    if (e.target.parentElement.classList.contains("habilidades-itens")) {
-      console.log(e.target.lastElementChild)
-    // e.target.lastElementChild.style.display = "none";
-      }
-  });
-});
-
-// habilidadesItens.forEach((e) => {
-//   e.addEventListener("mouseover", function () {
-//     e.lastElementChild.style.display = "block";
-//   });
-//   e.addEventListener("mouseout", function () {
-//     e.lastElementChild.style.display = "none";
+// habilidadesContainer.forEach((div) => {
+//   div.addEventListener("mouseover", function (e) {
+//     if (e.target.classList.contains("habilidades-itens")) {
+//       e.target.lastElementChild.style.display = "block";
+//     }
 //   });
 // });
+
+// habilidadesItens.forEach((div) => {
+//   div.addEventListener("mouseout", function (e) {
+//   if (e.target.classList.contains("habilidades-itens")) {
+//     e.target.lastElementChild.style.display = "none";
+//   }
+// });
+// })
+
+habilidadesItens.forEach((e) => {
+  e.addEventListener("mouseover", function () {
+    e.lastElementChild.style.display = "block";
+  });
+  e.addEventListener("mouseout", function () {
+    e.lastElementChild.style.display = "none";
+  });
+});
 
 removeBtn.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -62,6 +64,7 @@ removeBtn.forEach((e) => {
 
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  var habilidadesItens = document.querySelectorAll(".habilidades-itens");
   var pessoaisValue = pessoaisInput.value;
   var newElement = document
     .createRange()
