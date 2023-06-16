@@ -226,7 +226,7 @@ main {
 }
 
 .treinamento-img button:hover {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
 }
@@ -274,7 +274,6 @@ main {
     margin-top: 100px;
     border-radius: 10px 10px 0px 0px;
 
-
 }
 
 .hr-text h1 {
@@ -305,17 +304,19 @@ main {
 }
 
 .nav-pages a {
-    font-size: 25px;
-    color: black;
-    font-family: mohave-bold;
-    margin: 10px;
+  font-size: 25px;
+  color: black;
+  font-family: "mohave-bold", sans-serif;
+  margin: 10px;
+  transition: 0.3s;
 }
 
-.nav-pages a: {
-    font-size: 25px;
-    color: black;
-    font-family: mohave-bold;
-    margin: 10px;
+.nav-pages a:hover {
+  opacity: 0.5;
+  font-size: 28px;
+  color: black;
+  font-family: "mohave-bold", sans-serif;
+  margin: 10px;
 }
 
 
