@@ -263,24 +263,7 @@ main {
     box-shadow: rgba(38, 117, 182, 0.699) 8px 8px 8px 8px;
 }
 
-.hr-text {
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    padding: 0 50px;
-    margin-bottom: 10px;
-    border-radius: 10px 10px 0px 0px;
 
-}
-
-.hr-text h1 {
-    font-family: "mohave-bold",;
-    font-size: 60px;
-    font-weight: 300px;
-
-}
 
 .hr-container p {
     font-size: 25px;
@@ -316,6 +299,12 @@ main {
   color: black;
   font-family: "mohave-bold", sans-serif;
   margin: 10px;
+}
+
+.hr-container h1
+{
+  text-align: center;
+  font-size: 60px;
 }
 
 

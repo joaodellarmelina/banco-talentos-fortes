@@ -277,6 +277,31 @@ section {
   background-color: #229aaf57;
 }
 
+#forum textarea#area {
+  width: 70%;
+  height: 70%;
+  font-size: 20px;
+  padding-left: 1%;
+  padding-top: 1%;
+  margin-bottom: 20px;
+  background-color: #DEDEDE;
+  border-radius: 2px;
+  border: none;
+}
+
+#forum textarea#area:hover {
+  width: 70%;
+  height: 70%;
+  font-size: 20px;
+  padding-left: 1%;
+  padding-top: 1%;
+  margin-bottom: 20px;
+  background-color: #DDDDDD;
+  border-radius: 2px;
+  border: none;
+}
+
+
 .container button {
   font-family: mohave, sans-serif;
   font-size: 22px;
