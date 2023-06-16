@@ -319,6 +319,11 @@ main {
   margin: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  #media div{
+    font-size: 1.3rem;
+  }
+}
 
 /* Footer */
 

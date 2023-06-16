@@ -321,7 +321,7 @@ hr {
 
 @media screen and (max-width: 600px) {
   .noticia-text{
-    display:none
+    display: none;
   }
 
 }
