@@ -2,6 +2,12 @@ const habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
 const addBtn = document.querySelectorAll(".btn-add");
+const pessoaisAdd = document.querySelector(".pessoais-add");
+const pessoaisForm = document.querySelector("#pessoais-form");
+const profissionaisAdd = document.querySelector(".profissionais-add");
+const profissionaisForm = document.querySelector("#profissionais-form");
+const hobbiesAdd = document.querySelector(".hobbies-add");
+const hobbiesForm = document.querySelector("#hobbies-form");
 var newHabilidade = (document.createElement = `
                 <div class="habilidades-itens">
                   <div>
