@@ -361,7 +361,7 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   background: #ffffff;
   display: none;
   flex-direction: column;
@@ -437,27 +437,36 @@ footer {
 }
 
 .input-btns {
-  padding-top: 20px;
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.btn-cancelar {
-  font-size: 30px;
+.btn {
+  font-size: 25px;
   font-weight: 500;
-  background: rgba(0, 0, 255, 0.9);
+  
   padding: 5px 15px;
   border-radius: 15px;
   color: #ffffff;
-  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
   cursor: pointer;
+
 }
 
-.btn-salvar {
-  font-size: 30px;
-  font-weight: 500;
-  background: rgba(0, 0, 255, 0.9);
-  padding: 5px 15px;
+.btn.cancelar {
+  background: #db1818;
+  box-shadow: #db181866 0px 8px 24px;
+}
+
+
+
+.btn.salvar {
+
+  background: #11911a;
+  padding: 5px 26px;
   border-radius: 15px;
   color: #ffffff;
-  box-shadow: rgba(10, 10, 255, 0.2) 0px 8px 24px;
   cursor: pointer;
+  box-shadow: #11911a66 0px 8px 24px;
 }

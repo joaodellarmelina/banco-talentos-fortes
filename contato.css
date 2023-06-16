@@ -150,14 +150,14 @@ body{
   background-color: #c0d1f8;
 }
 .container {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 40px;
   margin-left: calc(100% - 85%);
   margin-bottom: 40px;
   background: #ffffff;
   width: 70%;
   max-width: 100%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .container h1 {
@@ -212,7 +212,7 @@ body{
 
 .form {
   padding: 0 12%;
-  margin: 40px auto;
+  margin: 40px 0 10px 0;
 }
 
 section h2 {
@@ -228,11 +228,7 @@ section h2 {
   background-color: #cbcbcb;
   border-radius: 2px;
 }
-button {
-  
-  display: flex;
-  justify-content: end;
-}
+
 .container button {
   font-family: mohave, sans-serif;
   font-size: 22px;
@@ -242,7 +238,8 @@ button {
   border-radius: 15px;
   box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-left: calc(100% - 24%);
+  margin-bottom: 16px;
 }
 
 .container button:hover{
