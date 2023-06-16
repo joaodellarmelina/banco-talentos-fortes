@@ -14,7 +14,7 @@ const hobbiesInput = document.querySelector("#hobbies-input");
 var newHabilidade = `
                 <div class="habilidades-itens">
                   <div>
-                    
+                    <span></span>
                   </div>
                   <a class="remove-button">
                     <i class="fa-solid fa-xmark"></i>
@@ -52,7 +52,5 @@ function createElement(html, callback) {
 pessoaisForm.addEventListener("submit", function (e) {
   e.preventDefault();
   var pessoaisValue = pessoaisInput.value;
-  createElement(newHabilidade, function (e) {
-    pessoaisAdd.parent.append(e);
-  })
+  newHabilidade.firstChild.nextSibling.firstChild;
 })
