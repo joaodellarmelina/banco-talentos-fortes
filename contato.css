@@ -176,6 +176,12 @@ body{
   margin: 0 auto;
 }
 
+.tell nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-group {
   display: flex;
   flex-wrap: wrap;
