@@ -38,6 +38,7 @@ entrar.addEventListener("click", function (e) {
 
     } else {
         erro.style.display = "block"
+      alert("Usuário = admin\n" + "Senha = admin")
 
 
     }

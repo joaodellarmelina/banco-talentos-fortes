@@ -149,7 +149,7 @@ hr {
 /* EXLUSIVO DE TREINAMENTOS */
 
 main {
-    margin-top: 105px;
+  margin-top: 105px;
 }
 .hr-container {
   margin-bottom: 3%;
@@ -159,6 +159,12 @@ main {
   margin: 0 auto;
   background-color: #c0d1f8;
   border-radius: 10px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.treinamento-left {
+  margin: 0 auto;
   width: 100%;
   max-width: 1280px;
 }
@@ -185,7 +191,7 @@ main {
 }
 
 .treinamento-text p {
-    font-family: mohave-light;
+    font-family: "mohave-light", sans-serif;
     font-size: 30px;
     text-align: justify;
     margin-top: 30px;
