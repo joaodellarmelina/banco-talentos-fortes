@@ -14,3 +14,7 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
+ function exibirAlerta() {
+    alert('Inscrito com sucesso');
+  }

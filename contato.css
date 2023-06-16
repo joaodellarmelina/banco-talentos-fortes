@@ -272,21 +272,23 @@ section {
   background-color: #229aaf20;
 }
 
+
 .container button {
   font-family: mohave, sans-serif;
   font-size: 22.2px;
   width: 200px;
   background-color: #24292e;
   color: #ffffff;
-  padding: 15px 0;
+  padding: 10px 0;
   border: solid 1px #24292e;
-  margin: auto 38%;
+  margin: auto 40%;
   cursor: pointer;
 }
 
 .container button:hover {
-  background: #fff;
+  background: #ffffff;
   color: #24292e;
+}
 
 .container h3 {
   padding: 0 12%;
@@ -383,6 +385,3 @@ footer {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-#btnTopo:hover {
-  opacity: 1;
-}
