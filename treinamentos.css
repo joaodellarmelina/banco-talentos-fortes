@@ -292,18 +292,26 @@ main {
 }
 
 .nav-pages {
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    cursor: pointer;
-    width: 197px;
-    position: relative;
-    left: 40%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 3%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-pages ol {
+  font-size: 28px;
 }
 
 .nav-pages a {
+    font-size: 25px;
+    color: black;
+    font-family: mohave-bold;
+    margin: 10px;
+}
+
+.nav-pages a: {
     font-size: 25px;
     color: black;
     font-family: mohave-bold;
