@@ -166,13 +166,14 @@ body{
 }
 
 .titulo p {
-  margin: 10px 80px ;
+  padding: 10px 12%;
+  margin-bottom: 2%;
   display: flex; 
 }
 
 .tell {
-  padding-top: 4%;
-  margin:
+  padding: 0 12%;
+  margin: 0 auto;
 }
 
 .form-group {
