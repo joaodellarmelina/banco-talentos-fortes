@@ -197,7 +197,7 @@ main {
 
 .data2 {
     font-size: 25px;
-    margin-top: 150px;
+    margin-top: 4%;
     font-family: "mohave-bold", sans-serif;
 }
 
@@ -208,13 +208,14 @@ main {
     color: #ffffff;
     padding: 1.5% 4%;
     border-radius: 14px;
-    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
-    cursor: pointer;
+    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;cursor: pointer;
     margin-top: 6%;
+    margin-left: 78%;
+  
 }
 
 .treinamento-text button:hover {
-    font-size: 38.2px;
+    font-size: 1.4rem;
     color: #ffffff96;
     box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
 }
