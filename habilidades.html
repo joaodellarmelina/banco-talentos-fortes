@@ -82,32 +82,13 @@
     </header>
     <main>
       <section class="habilidades-bg">
-        <div class="input-container">
-          <h2>Adicione sua habilidade/hobby:</h2>
-
-          <form class="form-group field">
-            <input
-              type="text"
-              class="form-field"
-              placeholder="Habilidade"
-              name="habilidade"
-              id="habilidade"
-              required
-            />
-            <label for="habilidade" class="form-label">Habilidade</label>
-            <div class="input-btns">
-              <button class="btn cancelar">Cancelar</button>
-              <button class="btn salvar">Salvar</button>
-            </div>
-          </form>
-        </div>
-        <div class="habilidades" id="blur">
+        <div class="habilidades">
           <div class="habilidades-title">
             <h1>Minhas Habilidades</h1>
           </div>
           <div class="habilidades-box">
             <h2 class="habilidades-subtitle">Habilidades Pessoais:</h2>
-            <div class="habilidades-container" id="pessoais">
+            <div class="habilidades-container">
               <div class="habilidades-itens">
                 <div class="">
                   <span>Trabalho em equipe</span>
@@ -132,15 +113,21 @@
                   <i class="fa-solid fa-xmark"></i>
                 </a>
               </div>
-
-              <div class="habilidades-add">
-                <button class="btn-add" id="btn-pessoais">Adicionar mais?</button>
+              <div class="habilidades-itens pessoais-add">
+                <div>
+                  <span>Academia</span>
+                </div>
+                <a class="remove-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
               </div>
+
+              
             </div>
           </div>
           <div class="habilidades-box">
             <h2 class="habilidades-subtitle">Habilidades Profissionais:</h2>
-            <div class="habilidades-container" id="profissionais">
+            <div class="habilidades-container">
               <div class="habilidades-itens">
                 <div>
                   <span>Machine Learning</span>
@@ -157,15 +144,21 @@
                   <i class="fa-solid fa-xmark"></i>
                 </a>
               </div>
-
-              <div class="habilidades-add">
-                <button class="btn-add" id="btn-profissionais">Adicionar mais?</button>
+              <div class="habilidades-itens">
+                <div>
+                  <span>Academia</span>
+                </div>
+                <a class="remove-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
               </div>
+
+              
             </div>
           </div>
           <div class="habilidades-box">
             <h2 class="habilidades-subtitle">Hobbies:</h2>
-            <div class="habilidades-container" id="hobbies">
+            <div class="habilidades-container">
               <div class="habilidades-itens">
                 <div>
                   <span>Corrida</span>
@@ -190,10 +183,16 @@
                   <i class="fa-solid fa-xmark"></i>
                 </a>
               </div>
-
-              <div class="habilidades-add">
-                <button class="btn-add" id="btn-hobbies">Adicionar mais?</button>
+              <div class="habilidades-itens">
+                <div>
+                  <span>Academia</span>
+                </div>
+                <a class="remove-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
               </div>
+
+              
             </div>
           </div>
         </div>

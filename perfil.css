@@ -179,13 +179,13 @@ body{
   object-fit: cover;
 }
 
-#dados div {
-  margin-top: 4.5%;
+#dados div p {
+  padding-left: 4px;
 }
 
 #dados hr {
   width: 15px;
-  height: 20px;
+  height: 15px;
   color: #C7C7C7;
 }
 
@@ -207,16 +207,20 @@ body{
 
 
 #dados3 {
-  margin-top: 200px;
+  margin-top: 175px;
+  padding: 0 4%;
   
 }
 
-.eventos img{
+#dados3 div img {
+  display: flex;
+}
+
+#dados3 img{
  border-radius: 0px;
  margin-top: 50px;
- margin-left: -260px;
- width: 550px;
- height: 350px;
+ width: 450px;
+ height: 250px;
  
 }
 
@@ -253,6 +257,12 @@ body{
 #buttonum{
   margin-left: -270px;
 }
+
+
+
+
+
+
 /*footer*/
 footer {
   background-color: #cacaca;
