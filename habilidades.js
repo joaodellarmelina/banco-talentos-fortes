@@ -37,13 +37,13 @@ addBtn.forEach((e) => {
 });
 
 inputField.addEventListener("submit", function () {
-  
+  var inputValue = this.value;
+  console.log(inputValue);
 })
 
 btnSalvar.addEventListener("click", function () {
   inputContainer.style.display = "none";
   habilidadesBlur.classList.toggle("active");
-  
 });
 
 btnCancelar.addEventListener("click", function () {

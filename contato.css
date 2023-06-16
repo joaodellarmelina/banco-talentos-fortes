@@ -195,7 +195,7 @@ body{
 
 #forum div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid: auto-flow dense / 100% 1fr;
   gap: 10px;
 }
 
@@ -240,7 +240,7 @@ section h2 {
   border-radius: 15px;
   box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
   cursor: pointer;
-  margin-left: calc(100% - 24%);
+  margin-left: calc(100% - 88%);
   margin-bottom: 16px;
 }
 
