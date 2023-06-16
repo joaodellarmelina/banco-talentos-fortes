@@ -15,6 +15,3 @@ function scrollToTop() {
   });
 }
 
- function exibirAlerta() {
-    alert('Inscrito com sucesso');
-  }
