@@ -25,21 +25,21 @@ var newHabilidade = `
                 </div>
                 `;
 
-// habilidadesContainer.forEach((div) => {
-//   div.addEventListener("mouseover", function (e) {
-//     if (e.target.classList.contains("habilidades-itens")) {
-//       e.target.lastElementChild.style.display = "block";
-//     }
-//   });
-// });
 
-// habilidadesItens.forEach((div) => {
-//   div.addEventListener("mouseout", function (e) {
-//   if (e.target.classList.contains("habilidades-itens")) {
-//     e.target.lastElementChild.style.display = "none";
-//   }
-// });
-// })
+
+pessoaisForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var habilidadesItens = document.querySelectorAll(".habilidades-itens");
+  var pessoaisValue = pessoaisInput.value;
+  var newElement = document
+    .createRange()
+    .createContextualFragment(newHabilidade);
+  var pessoaisParent = pessoaisAdd.parentNode;
+  pessoaisParent.insertBefore(newElement, pessoaisAdd);
+  var pessoaisSpan =
+    pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
+  pessoaisSpan.textContent = pessoaisValue;
+});
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -60,18 +60,4 @@ removeBtn.forEach((e) => {
   e.addEventListener("click", function () {
     e.parentElement.remove();
   });
-});
-
-pessoaisForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var habilidadesItens = document.querySelectorAll(".habilidades-itens");
-  var pessoaisValue = pessoaisInput.value;
-  var newElement = document
-    .createRange()
-    .createContextualFragment(newHabilidade);
-  var pessoaisParent = pessoaisAdd.parentNode;
-  pessoaisParent.insertBefore(newElement, pessoaisAdd);
-  var pessoaisSpan =
-    pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
-  pessoaisSpan.textContent = pessoaisValue;
 });
