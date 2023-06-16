@@ -153,10 +153,11 @@ main {
 }
 
 .treinamento-right {
+  margin: 0 auto;
   background-color: #c0d1f8;
   border-radius: 10px;
   width: 100%;
-  max-width: 960px;
+  max-width: 1280px;
 }
 
 .treinamento-container {
@@ -181,11 +182,8 @@ main {
 }
 
 .treinamento-text p {
-    padding: 20px 0;
     font-family: mohave-light;
     font-size: 30px;
-    text-align: center;
-    font-weight: 400px;
     text-align: justify;
     margin-top: 30px;
 
@@ -205,17 +203,14 @@ main {
 
 .treinamento-text button {
     font-family: "mohave-light", sans-serif;
-    font-size: 38px;
-    font-weight: 700px;
+    font-size: 20px;
     background-color: #0000ff;
     color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 15px;
-    margin-top: 50px;
+    padding: 1.5% 4%;
+    border-radius: 14px;
     box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
     cursor: pointer;
-    margin-top: 70px;
-    margin-left: 250px;
+    margin-top: 6%;
 }
 
 .treinamento-text button:hover {
@@ -302,11 +297,6 @@ main {
     font-family: mohave-bold;
     margin: 10px;
 }
-
-.treinamento-right {
-    margin: 80px;
-}
-
 
 
 /* Footer */
