@@ -152,7 +152,7 @@ main {
   margin-top: 105px;
 }
 .hr-container {
-  margin-bottom: 3%;
+  margin-bottom: 6%;
 }
 
 .treinamento-right {
@@ -161,17 +161,19 @@ main {
   border-radius: 10px;
   width: 100%;
   max-width: 1280px;
+  margin-bottom: 6.5%;
 }
 
 .treinamento-left {
   margin: 0 auto;
   width: 100%;
   max-width: 1280px;
+  margin-bottom: 6%;
 }
 
 .treinamento-container {
     display: flex;
-    padding: 80px 6%;
+    padding: 70px 6%;
 }
 
 .treinamento-text {
@@ -219,7 +221,7 @@ main {
     border-radius: 14px;
     box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;cursor: pointer;
     margin-top: 6%;
-    margin-left: 79.5%;
+    margin-left: 79%;
   
 }
 
