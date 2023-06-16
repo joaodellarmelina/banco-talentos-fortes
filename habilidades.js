@@ -22,30 +22,31 @@ var newHabilidade = `
                 </div>
                 `;
 
-
-
-function ativarRemove() {
-  habilidadesItens.forEach((e) => {
-    e.addEventListener("mouseover", function () {
-      e.lastElementChild.style.display = "block";
-    });
-    e.addEventListener("mouseout", function () {
-      e.lastElementChild.style.display = "none";
-    });
-  });
-
-  removeBtn.forEach((e) => {
-    e.addEventListener("mouseover", function () {
-      e.previousElementSibling.classList.toggle("remove");
-    });
-    e.addEventListener("mouseout", function () {
-      e.previousElementSibling.classList.toggle("remove");
-    });
-    e.addEventListener("click", function () {
-      e.parentElement.remove();
-    });
-  });
+function processDiv (divElement) {
+  console.log("Processando a div:", divElement);
 }
+var existingDivs = 
+
+habilidadesItens.forEach((e) => {
+  e.addEventListener("mouseover", function () {
+    e.lastElementChild.style.display = "block";
+  });
+  e.addEventListener("mouseout", function () {
+    e.lastElementChild.style.display = "none";
+  });
+});
+
+removeBtn.forEach((e) => {
+  e.addEventListener("mouseover", function () {
+    e.previousElementSibling.classList.toggle("remove");
+  });
+  e.addEventListener("mouseout", function () {
+    e.previousElementSibling.classList.toggle("remove");
+  });
+  e.addEventListener("click", function () {
+    e.parentElement.remove();
+  });
+});
 
 function createElement(html, callback) {
   const element = document.createElement("div");
@@ -64,7 +65,5 @@ pessoaisForm.addEventListener("submit", function (e) {
   var pessoaisSpan =
     pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
   pessoaisSpan.textContent = pessoaisValue;
-  ativarRemove();
+  processDiv(newHabilidade);
 });
-
-ativarRemove();
