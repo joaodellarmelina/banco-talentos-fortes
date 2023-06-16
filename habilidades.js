@@ -1,6 +1,4 @@
-const habilidadesContainer = document.querySelectorAll(
-  ".habilidades-container"
-);
+const newElements = [];
 var habilidadesItens = document.querySelectorAll(".habilidades-itens");
 const habilidadesItensDiv = document.querySelector(".habilidades-itens div");
 const removeBtn = document.querySelectorAll(".remove-button");
@@ -25,21 +23,27 @@ var newHabilidade = `
                 </div>
                 `;
 
-
-
-pessoaisForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var habilidadesItens = document.querySelectorAll(".habilidades-itens");
-  var pessoaisValue = pessoaisInput.value;
-  var newElement = document
-    .createRange()
-    .createContextualFragment(newHabilidade);
-  var pessoaisParent = pessoaisAdd.parentNode;
-  pessoaisParent.insertBefore(newElement, pessoaisAdd);
-  var pessoaisSpan =
-    pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
-  pessoaisSpan.textContent = pessoaisValue;
-});
+function iterateNewElements() {
+  newElements.forEach(function (e) {
+    e.addEventListener("mouseover", function () {
+      e.lastElementChild.style.display = "block";
+    });
+    e.addEventListener("mouseout", function () {
+      e.lastElementChild.style.display = "none";
+    });
+  });
+  removeBtn.forEach((e) => {
+    e.addEventListener("mouseover", function () {
+      e.previousElementSibling.classList.toggle("remove");
+    });
+    e.addEventListener("mouseout", function () {
+      e.previousElementSibling.classList.toggle("remove");
+    });
+    e.addEventListener("click", function () {
+      e.parentElement.remove();
+    });
+  });
+}
 
 habilidadesItens.forEach((e) => {
   e.addEventListener("mouseover", function () {
@@ -60,4 +64,19 @@ removeBtn.forEach((e) => {
   e.addEventListener("click", function () {
     e.parentElement.remove();
   });
+});
+
+pessoaisForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var habilidadesItens = document.querySelectorAll(".habilidades-itens");
+  var pessoaisValue = pessoaisInput.value;
+  var newElement = document
+    .createRange()
+    .createContextualFragment(newHabilidade);
+  var pessoaisParent = pessoaisAdd.parentNode;
+  pessoaisParent.insertBefore(newElement, pessoaisAdd);
+  var pessoaisSpan =
+    pessoaisAdd.previousElementSibling.firstElementChild.firstElementChild;
+  pessoaisSpan.textContent = pessoaisValue;
+  newElements.push(newHabilidade);
 });
