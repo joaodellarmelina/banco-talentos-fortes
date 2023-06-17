@@ -23,12 +23,13 @@
 }
 
 header {
-  background-color: white;
+  font-family: "Mohave", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
   border-bottom: 1px solid #000000;
+  background-color: white;
 }
 
 .paths a {
@@ -104,17 +105,18 @@ header {
 }
 
 div.notificações {
+  font-family: mohave,sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
   margin-top: 20px;
 }
 
-h3 {
+#bloco-notifi h3 {
   margin-top: 15px;
 }
 
-.notificações hr {
+#bloco-notifi hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -145,159 +147,145 @@ h3 {
   border-radius: 50%;
 }
 
-/*contatos página*/
-body {
+/* Inserindo os detalhes do prefil*/
+
+body{
   background-color: #c0d1f8;
 }
 
 .container {
-  border-radius: 5px;
-  padding: 40px;
-  margin-left: calc(100% - 85%);
-  margin-bottom: 40px;
-  background: #ffffff;
-  width: 70%;
-  max-width: 100%;
-  margin-top: 3%;
-}
-
-.container h1 {
-  justify-content: center;
-  display: flex;
-  font-family: mohave-bold;
-  text-transform: uppercase;
-
-}
-
-.titulo p {
-  padding: 10px 12%;
-  margin-bottom: 2%;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 22px;
-  text-align: center;
-}
-
-.container hr {
-  border-color: black;
-  display: block;
-  border-style: outset;
-  border-width: 1px;
-}
-
-/* telefone */
-#Number dl {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#Number dt {
-  width: 40%;
-
-  font-family: mohave-bold;
-}
-
-#Number dd {
   width: 60%;
-  text-align: left;
-  font-family: mohave-light;
-
-}
-
-.title-form {
-  display: flex;
-
-}
-
-.contato-title {
-  margin-left: 117px;
-  font-family: mohave-bold;
-}
-
-.tell {
-  padding: 0 12%;
-  margin: 5px auto;
-
-}
-
-/* formulario */
-
-#forum div {
-  display: grid;
-  grid: auto-flow dense / 100% 1fr;
-  gap: 10px;
-}
-
-#forum label {
-  width: 40%;
-  font-size: 20px;
-
-}
-
-#forum input {
-  width: 100%;
-  border: solid 1px #c8c8c8;
-  padding: 10px;
-}
-
-
-
-#forum input:focus {
-  background-color: #229aaf20;
-}
-
-.form {
-  padding: 0 12%;
-  margin: 40px 0 10px 0;
-}
-
-section h2 {
-  padding-top: 2%;
-  padding-bottom: 5px;
-  font-family: "mohave-light", sans-serif;
-  text-align: center;
-}
-
-section {
   align-items: center;
+  margin: 40px auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
 }
 
-#forum textarea {
-  width: 100%;
-  border: solid 1px #c8c8c8;
-  padding: 10px;
+#dados {
+  max-width: 960px;
+  height: 170px;
+  margin: 4% auto;
+  padding: 0 4%;
+  display: flex;
+} 
+
+#dados img {
+  width: 250px;
+  height: 250px;
+  margin-right: 40px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-#forum textarea:focus {
-  background-color: #229aaf20;
+#dados div p {
+  padding-left: 4px;
+  font-size: 1.35em;
 }
 
-.container button {
+#dados hr {
+  width: 15px;
+  height: 15px;
+  color: #C7C7C7;
+}
+
+
+#dados2 {
+  margin-top: 175px;
+  padding: 0 4%;
+}
+
+#dados2 div {
+  font-size: 1.2em;
+}
+
+#border {
+  margin: 0 auto;
+  padding: 15px;
+  border: 0.1rem solid;
+  border-color: #DDDDDD;
+}
+
+.ev1 {
+  display: flex;
+}
+
+.ev1 div {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.ev2 {
+  display: flex;
+}
+
+.ev2 div {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+#dados3 {
+  margin-top: 60px;
+  padding: 0 4%;
+  
+}
+
+#dados3 h2 {
+  margin-bottom: 20px;
+}
+
+#dados3 div img {
+  display: flex;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  width: 400px;
+  height: 250px;
+ 
+}
+
+.eventos button {
   font-family: mohave, sans-serif;
-  font-size: 22.2px;
-  width: 200px;
-  background-color: #24292e;
+  font-size: 20px;
+  font-weight: 700px;
+  background-color: #0000ff;
   color: #ffffff;
-  padding: 10px 0;
-  border: solid 1px #24292e;
-  margin: auto 40%;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
   cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
-.container button:hover {
-  background: #ffffff;
-  color: #24292e;
+.eventos button:hover{
+    font-size: 20.2px;
+    color: #ffffff96;
+box-shadow: rgba(255, 10, 10, 0.61) 0px 8px 24px;
+  background-color: #ff000098;
+  
 }
 
-.container h3 {
-  padding: 0 12%;
-  margin: 40px 0 10px 0;
-  padding-top: 2%;
-  padding-bottom: 12px;
+.eventos p{
+  font-size: 20px;
 }
 
-/* Footer */
+.eventos hr{
+  width: 1010px;
+  margin-left: -288px;
+}
 
+#buttonum{
+  margin-left: -270px;
+}
+
+
+
+
+
+
+/*footer*/
 footer {
   background-color: #cacaca;
   height: 165px;
@@ -375,11 +363,15 @@ footer {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #7750ee;
-  color: #ffffff;
+  background-color: #0f36e4;
+  color: #fff;
   border: none;
   border-radius: 50%;
   opacity: 0.8;
   cursor: pointer;
   transition: opacity 0.3s, visibility 0.3s;
+}
+
+#btnTopo:hover {
+  opacity: 1;
 }

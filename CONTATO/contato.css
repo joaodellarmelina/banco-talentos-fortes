@@ -23,7 +23,7 @@
 }
 
 header {
-  font-family: "Mohave", sans-serif;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,7 +104,6 @@ header {
 }
 
 div.notificações {
-  font-family: "mohave-light", sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
@@ -115,7 +114,7 @@ h3 {
   margin-top: 15px;
 }
 
-hr {
+.notificações hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -146,184 +145,155 @@ hr {
   border-radius: 50%;
 }
 
-/* EXCLUSIVO DA HOME */
-
-.back-image {
-  background-image: url(https://cdn.glitch.global/d9f9ea95-a051-4b69-becf-d2057ac98f73/Background.png?v=1686024710746);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 670px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.back-white {
-  background: #ffffff;
-  position: absolute;
-  align-content: center;
-  width: 950px;
-  max-width: 100%;
-  height: 550px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
-}
-
-.back-center {
-  height: 420px;
-  max-width: 100%;
-}
-
-.hr-container {
-  position: relative;
-  width: calc(100% - 20%);
-  left: 10%;
-  margin: 80px 0;
-}
-
-.hr-container hr {
-  display: block;
-  border: none;
-  border-top: 1.5px solid #000000;
-  padding: 0;
-}
-
-.hr-text {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ffffff;
-  padding: 0 50px;
-  margin-bottom: 5px;
-  font-size: 50px;
-  font-weight: 300;
-}
-
-.noticia-back {
-  padding: 0 8%;
-}
-
-.noticias-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap: 1.4rem 2rem;
-}
-
-.noticia {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
-}
-
-.noticia-img img {
-  padding-top: 5px;
-  width: 100%;
-}
-
-.noticia-text {
-  padding-left: 20px;
-  max-width: 400px;
-}
-
-.noticia-text h4 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.noticia-text p {
-  font-size: 16px;
-  padding-top: 12px;
-}
-
-.evento-right {
-  display: flex;
-  justify-content: center;
+/*contatos página*/
+body {
   background-color: #c0d1f8;
-  border-radius: 10px;
 }
 
-.evento-container {
+.container {
+  border-radius: 5px;
+  padding: 40px;
+  margin-left: calc(100% - 85%);
+  margin-bottom: 40px;
+  background: #ffffff;
+  width: 70%;
+  max-width: 100%;
+  margin-top: 3%;
+}
+
+.container h1 {
+  justify-content: center;
   display: flex;
-  padding: 80px 6%;
+  font-family: mohave-bold;
+  text-transform: uppercase;
+
 }
 
-.evento-text {
-  width: 50%;
-  align-self: center;
-  padding-right: 35px;
+.titulo p {
+  padding: 10px 12%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  text-align: center;
 }
 
-.evento-text.left {
-  padding: 0 0 0 35px;
+.container hr {
+  border-color: black;
+  display: block;
+  border-style: outset;
+  border-width: 1px;
 }
 
-.evento-text h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+/* telefone */
+#Number dl {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.evento-text p {
-  padding: 15px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: justify;
+#Number dt {
+  width: 40%;
+
+  font-family: mohave-bold;
 }
 
-.evento-img {
-  width: 50%;
+#Number dd {
+  width: 60%;
+  text-align: left;
+  font-family: mohave-light;
+
+}
+
+.title-form {
+  display: flex;
+
+}
+
+.contato-title {
+  margin-left: 117px;
+  font-family: mohave-bold;
+}
+
+.tell {
+  padding: 0 12%;
+  margin: 5px auto;
+
+}
+
+/* formulario */
+
+#forum div {
+  display: grid;
+  grid: auto-flow dense / 100% 1fr;
+  gap: 10px;
+}
+
+#forum label {
+  width: 40%;
+  font-size: 20px;
+
+}
+
+#forum input {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
 }
 
 
-.evento-text button {
+
+#forum input:focus {
+  background-color: #229aaf20;
+}
+
+.form {
+  padding: 0 12%;
+  margin: 40px 0 10px 0;
+}
+
+section h2 {
+  padding-top: 2%;
+  padding-bottom: 5px;
+  font-family: "mohave-light", sans-serif;
+  text-align: center;
+}
+
+section {
+  align-items: center;
+}
+
+#forum textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+
+#forum textarea:focus {
+  background-color: #229aaf20;
+}
+
+.container button {
   font-family: mohave, sans-serif;
-  font-size: 38px;
-  background-color: #0000ff;
+  font-size: 22.2px;
+  width: 200px;
+  background-color: #24292e;
   color: #ffffff;
-  padding: 10px 30px;
-  border-radius: 15px;
-  margin-top: 50px;
-  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
+  padding: 10px 0;
+  border: solid 1px #24292e;
+  margin: auto 40%;
   cursor: pointer;
-  margin-top: 70px;
-  margin-left: 250px;
 }
 
-.evento-text button:hover{
-    font-size: 38.2px;
-    color: #ffffff96;
-    box-shadow: rgba(10, 10, 255, 0.459) 0px 8px 24px;
+.container button:hover {
+  background: #ffffff;
+  color: #24292e;
 }
 
-.evento-img img {
-  width: 94%;
-  border-radius: 10px;
-  box-shadow: rgba(38, 117, 182, 0.411) 8px 8px 8px 8px;
-}
-
-
-@media screen and (max-width: 600px) {
-  .noticia-text{
-    display: none;
-  }
-
+.container h3 {
+  padding: 0 12%;
+  margin: 40px 0 10px 0;
+  padding-top: 2%;
+  padding-bottom: 12px;
 }
 
 /* Footer */
@@ -405,19 +375,11 @@ footer {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #7750ee;
-  color: #fff;
+  background-color: #0f36e4;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   opacity: 0.8;
   cursor: pointer;
   transition: opacity 0.3s, visibility 0.3s;
 }
-
-#btnTopo:hover {
-  opacity: 1;
-}
-
-
-
-

@@ -40,7 +40,7 @@ header {
 }
 
 .paths a:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .logo {
@@ -149,26 +149,27 @@ hr {
 /* EXLUSIVO DE TREINAMENTOS */
 
 main {
-  margin-top: 105px;
+    margin-top: 105px;
 }
+
 .hr-container {
-  margin-bottom: 6%;
+    margin-bottom: 6%;
 }
 
 .treinamento-right {
-  margin: 0 auto;
-  background-color: #c0d1f8;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 1280px;
-  margin-bottom: 6.5%;
+    margin: 0 auto;
+    background-color: #c0d1f8;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 6.5%;
 }
 
 .treinamento-left {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  margin-bottom: 6%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 6%;
 }
 
 .treinamento-container {
@@ -187,7 +188,7 @@ main {
 }
 
 .treinamento-text h3 {
-    font-family: "mohave-bold",sans-serif;
+    font-family: "mohave-bold", sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
@@ -219,10 +220,11 @@ main {
     color: #ffffff;
     padding: 1.5% 4%;
     border-radius: 14px;
-    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;cursor: pointer;
+    box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
+    cursor: pointer;
     margin-top: 6%;
     margin-left: 79%;
-  
+
 }
 
 .treinamento-img button:hover {
@@ -269,7 +271,7 @@ main {
 }
 
 .hr-text h1 {
-    font-family: "mohave-bold",;
+    font-family: "mohave-bold", ;
     font-size: 60px;
     font-weight: 300px;
 
@@ -283,32 +285,36 @@ main {
 }
 
 .nav-pages {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  margin-bottom: 3%;
-  text-align: center;
-  cursor: pointer;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 3%;
+    text-align: center;
+    cursor: pointer;
+
 }
 
+
 .nav-pages ol {
-  font-size: 28px;
+    font-size: 28px;
+    text-align: center;
+
 }
 
 .nav-pages a {
-  font-size: 25px;
-  color: black;
-  font-family: "mohave-bold", sans-serif;
-  margin: 10px;
-  transition: 0.3s;
+    font-size: 25px;
+    color: black;
+    font-family: "mohave-bold", sans-serif;
+    margin: 10px;
+    transition: 0.3s;
 }
 
 .nav-pages a:hover {
-  opacity: 0.5;
-  font-size: 28px;
-  color: black;
-  font-family: "mohave-bold", sans-serif;
-  margin: 10px;
+    opacity: 0.5;
+    font-size: 28px;
+    color: black;
+    font-family: "mohave-bold", sans-serif;
+    margin: 10px;
 }
 
 
@@ -385,22 +391,21 @@ footer {
 /*BackTopTop*/
 
 #btnTopo {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #7750ee;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.8;
-  cursor: pointer;
-  transition: opacity 0.3s, visibility 0.3s;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0f36e4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 #btnTopo:hover {
-  opacity: 1;
+    opacity: 1;
 }
-

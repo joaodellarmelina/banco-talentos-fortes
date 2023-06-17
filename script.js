@@ -31,14 +31,14 @@ entrar.addEventListener("click", function (e) {
     // VALIDAÇÃO DE LOGIN E SENHA
 
     if (login_text === login2 && senha_text === password) {
-        window.location = "home.html";
+        window.location = "FRONT PAGE/home.html";
     } else if (login_text === ' ' || senha_text === ' ') {
         erro2.style.display = "block"
         return;
 
     } else {
         erro.style.display = "block"
-      alert("Usuário = admin\n" + "Senha = admin")
+        alert("Usuário = admin\n" + "Senha = admin")
 
 
     }

@@ -29,7 +29,6 @@ header {
   justify-content: space-between;
   padding: 0 15px;
   border-bottom: 1px solid #000000;
-  background-color: white;
 }
 
 .paths a {
@@ -105,18 +104,18 @@ header {
 }
 
 div.notificações {
-  font-family: mohave,sans-serif;
+  font-family: mohave-light, sans-serif;
   text-align: center;
   display: flexbox;
   font-size: 15px;
   margin-top: 20px;
 }
 
-#bloco-notifi h3 {
+h3 {
   margin-top: 15px;
 }
 
-#bloco-notifi hr {
+hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -147,145 +146,6 @@ div.notificações {
   border-radius: 50%;
 }
 
-/* Inserindo os detalhes do prefil*/
-
-body{
-  background-color: #c0d1f8;
-}
-
-.container {
-  width: 60%;
-  align-items: center;
-  margin: 40px auto;
-  margin-bottom: 60px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: white;
-}
-
-#dados {
-  max-width: 960px;
-  height: 170px;
-  margin: 4% auto;
-  padding: 0 4%;
-  display: flex;
-} 
-
-#dados img {
-  width: 250px;
-  height: 250px;
-  margin-right: 40px;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-#dados div p {
-  padding-left: 4px;
-  font-size: 1.35em;
-}
-
-#dados hr {
-  width: 15px;
-  height: 15px;
-  color: #C7C7C7;
-}
-
-
-#dados2 {
-  margin-top: 175px;
-  padding: 0 4%;
-}
-
-#dados2 div {
-  font-size: 1.2em;
-}
-
-#border {
-  margin: 0 auto;
-  padding: 15px;
-  border: 0.1rem solid;
-  border-color: #DDDDDD;
-}
-
-.ev1 {
-  display: flex;
-}
-
-.ev1 div {
-  margin-top: 60px;
-  margin-left: 15px;
-}
-
-.ev2 {
-  display: flex;
-}
-
-.ev2 div {
-  margin-top: 60px;
-  margin-left: 15px;
-}
-
-#dados3 {
-  margin-top: 60px;
-  padding: 0 4%;
-  
-}
-
-#dados3 h2 {
-  margin-bottom: 20px;
-}
-
-#dados3 div img {
-  display: flex;
-  border-radius: 12px;
-  margin-bottom: 50px;
-  width: 400px;
-  height: 250px;
- 
-}
-
-.eventos button {
-  font-family: mohave, sans-serif;
-  font-size: 20px;
-  font-weight: 700px;
-  background-color: #0000ff;
-  color: #ffffff;
-  padding: 10px 30px;
-  border-radius: 15px;
-  margin-top: 50px;
-  box-shadow: rgba(10, 10, 255, 0.596) 0px 8px 24px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-
-.eventos button:hover{
-    font-size: 20.2px;
-    color: #ffffff96;
-box-shadow: rgba(255, 10, 10, 0.61) 0px 8px 24px;
-  background-color: #ff000098;
-  
-}
-
-.eventos p{
-  font-size: 20px;
-}
-
-.eventos hr{
-  width: 1010px;
-  margin-left: -288px;
-}
-
-#buttonum{
-  margin-left: -270px;
-}
-
-
-
-
-
-
-/*footer*/
 footer {
   background-color: #cacaca;
   height: 165px;
@@ -335,11 +195,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Inter", sans-serif;
 }
 
 .footer-rights span {
   color: #666666;
-  font-family: "Inter", sans-serif;
 }
 
 .footer-policy a {
@@ -347,11 +207,150 @@ footer {
   color: #666666;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
 }
 
 .footer-policy a:nth-child(3) {
   padding-right: 0;
+}
+
+@media (max-width: 900px) {
+  header {
+    font-family: mohave-light, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0px 0px;
+    border: 1px solid #000000;
+    height: 100px;
+  }
+
+  .path {
+    display: none;
+  }
+
+  .paths a {
+    padding: 0 60px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+}
+
+.habilidades-bg {
+  background-color: #c0d1f8;
+  padding: 5%;
+}
+
+.habilidades {
+  font-family: mohave-light, sans-serif;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 25px;
+}
+
+.habilidades#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.habilidades-title {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.habilidades-title h1 {
+  font-size: 50px;
+  font-weight: 500;
+  border-bottom: 4px solid rgba(0, 0, 255, 0.8);
+  line-height: 1;
+}
+
+.habilidades-box {
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(10, 10, 255, 0.25) 0px 8px 24px;
+  margin-bottom: 60px;
+}
+
+.habilidades-subtitle {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.habilidades-itens {
+  padding: 10px 40px 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.habilidades-itens div {
+  padding: 0 15px;
+  border-radius: 16px;
+  border: 4px solid rgba(0, 0, 255, 0.8);
+  box-shadow: rgba(10, 10, 255, 0.15) 0px 8px 24px;
+}
+
+.habilidades-itens div.remove {
+  border: 4px solid rgba(219, 24, 24);
+  box-shadow: rgba(219, 24, 24, 0.15) 0px 8px 24px;
+  transition: ease 0.4s;
+}
+
+.habilidades-itens span {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.remove-button {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  padding-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(219, 24, 24);
+  cursor: pointer;
+}
+
+.pessoais-add,
+.profissionais-add,
+.hobbies-add {
+  margin-top: 100px;
+  margin-left: auto;
+}
+
+.pessoais-add div,
+.profissionais-add div,
+.hobbies-add div {
+  padding: 0 15px;
+  border-radius: 16px;
+  border: 4px solid #999999;
+  box-shadow: rgba(10, 10, 255, 0.15) 0px 8px 24px;
+}
+
+.pessoais-add input,
+.profissionais-add input,
+.hobbies-add input {
+  font-size: 32px;
 }
 
 /*BackToTop*/
@@ -363,7 +362,7 @@ footer {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #7750ee;
+  background-color: #0f36e4;
   color: #fff;
   border: none;
   border-radius: 50%;
