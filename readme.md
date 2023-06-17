@@ -1,4 +1,5 @@
 ![BANDO DE TALENTOS FORTES](git-img/img2.png)
+
 ---
 
 > ## ATENÇÃO!! 
@@ -7,6 +8,10 @@
 > 
 > **LOGIN:** admin  
 > **SENHA:** admin 
+
+---
+
+![HABILIDADES](git-img/WEB.gif)
 
 ---
 
@@ -44,7 +49,7 @@ Nos dedicamos bastante para criar um site legal, nós gastamos no total 100 hora
 
 ---
 
-![HABILIDADES](git-img/WEB.gif)
+
 ![CODE](git-img/web.png)
 
 ---
