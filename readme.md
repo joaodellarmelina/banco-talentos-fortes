@@ -1,6 +1,6 @@
 ![BANDO DE TALENTOS FORTES](git-img/img2.png)
 
----
+--- 
 
 > ## ATENÇÃO!! 
 >
