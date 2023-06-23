@@ -40,7 +40,7 @@ as heuristicas de nielsen para trazer a melhor usuabilidade. Logo mais, criamos 
 
 ---
 
-# WEB - *[link download](https://github.com/joaodellarmelina/banco-talentos-fortes/archive/refs/heads/main.zip)* 
+# WEB - *[link](https://github.com/joaodellarmelina/banco-talentos-fortes/tree/b56d35c2b5de7589eaab4e5fc8e5c3936176c1e6/WEB)* 
 
 Em cima do **PROTOTIPO** e das *soluções* pensadas nos baseamos para "tirar a ideia do papel" e **começar a codar**.
 Nos dedicamos bastante para criar um site legal, nós gastamos no total 100 horas para criar os 30 arquivos que compõe o trabalho. 
@@ -54,10 +54,12 @@ Nos dedicamos bastante para criar um site legal, nós gastamos no total 100 hora
 
 ---
 
-## BANCO DE DADOS - *[link](https://www.devmedia.com.br/projeto-de-banco-de-dados-parte-1/10923)*
+## BANCO DE DADOS - *[link](https://github.com/joaodellarmelina/banco-talentos-fortes/tree/c5c1cd240dabbb60c3a2fc22d5421f834b419ecb/banco-de-dados)*
 
-IN PROGRESS...
+![CODE](banco-de-dados/PROJETO CONCEITUAL - fortes.png)
 
+
+Depois da execução de todo projeto WEB nós criamos o banco de dados do banco de talentos, seguimos todas as etapas PROJETO ***CONCEITUAL*** -> ***LÓGICO*** -> CRIAÇÃO DO ***SCRIPT***
 > Professor Abrantes Araujo Silva Filho
 
 ---
