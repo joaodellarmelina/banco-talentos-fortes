@@ -57,7 +57,7 @@ Nos dedicamos bastante para criar um site legal, nós gastamos no total 100 hora
 ## BANCO DE DADOS - *[link](https://github.com/joaodellarmelina/banco-talentos-fortes/tree/c5c1cd240dabbb60c3a2fc22d5421f834b419ecb/banco-de-dados)*
 
 ![CODE](git-img/SCRIPTBD.png)
-![CONCEITUAL](git-img/PROCEJOCONCEITUAL.png)
+![CONCEITUAL](git-img/PROJETOCONCEITUAL.png)
 
 
 Depois da execução de todo projeto WEB nós criamos o banco de dados do banco de talentos, seguimos todas as etapas PROJETO ***CONCEITUAL*** -> ***LÓGICO*** -> CRIAÇÃO DO ***SCRIPT***
@@ -71,8 +71,8 @@ Fizemos nosso melhor dentro da condição de conhecimento e tempo que tivemos, f
 
 ---
 
-# ![FAÇA DOWNLOAD DO TRABALHO AQUI](https://github.com/joaodellarmelina/banco-talentos-fortes/archive/refs/heads/main.zip)
-ou dê um
+### [FAÇA DOWNLOAD DO TRABALHO AQUI](https://github.com/joaodellarmelina/banco-talentos-fortes/archive/refs/heads/main.zip)
+### ou dê um
 `
 git clone https://github.com/joaodellarmelina/banco-talentos-fortes.git
 `
