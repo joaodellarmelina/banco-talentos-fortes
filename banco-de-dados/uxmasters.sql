@@ -6,32 +6,7 @@ Gustavo Müller, João Vitor Dellarmelina,
 Marcos Macedo, Théo Alves
 */
 
--- Exclui o banco de dados "fortes" caso exista
-drop database if exists fortes;
-
--- Exclui o usuário "uxmasters" caso exista
-drop user if exists uxmasters;
-
--- Cria o usuário "uxmasters" com permissão para criar banco de dados, criar usuário/role e com a senha criptografada
-create user uxmasters with createdb createrole encrypted password 'raiz';
-
--- Cria o banco de dados com nome "fortes" e com o usuário "uxmasters" como dono
-create database fortes with 
-owner = uxmasters;
-
--- Se conecta ao banco de dados "fortes", com o usuário "uxmasters", sem precisar de senha quando rodar o script
-\c "dbname = fortes user = uxmasters password = raiz"
-
--- Cria o schema "bancodetalentos" dando autorização para o usuário "uxmasters"
-create schema talentos authorization uxmasters;
-
--- Altera o search_path para o schema "bancodetalentos", tornando esse o schema padrão
-ALTER USER uxmasters
-SET SEARCH_PATH TO bancodetalentos, "$user", public;
-
-
-
-
+-- Cria a tabela que representa as habilidades dos funcionários
 CREATE TABLE talentos.habilidades (
                 cod_habilidades NUMERIC(10) NOT NULL,
                 nome_habilidades VARCHAR(512) NOT NULL,
@@ -43,7 +18,17 @@ COMMENT ON COLUMN talentos.habilidades.cod_habilidades IS 'Codigo de ID dos habi
 COMMENT ON COLUMN talentos.habilidades.nome_habilidades IS 'Coluna que contém os nomes de habilidades dos func';
 COMMENT ON COLUMN talentos.habilidades.tipo_habilidades IS 'Coluna que contém o tipo de habilidades dos func';
 
+/* Check constraint que determina os valores aceitos pela coluna tipo_habilidades:
+(S = soft skills/habilidades pessoais)
+(P = hard skills/habilidades profissionais)
+(H = hobbies)
+*/
+ALTER TABLE talentos.habilidades
+ADD CONSTRAINT check_tipo_habilidades
+CHECK (tipo_habilidades IN ('S', 'P', 'H'));
 
+
+-- Tabela que representa o CEP
 CREATE TABLE talentos.tabela_cep (
                 cep NUMERIC(8) NOT NULL,
                 CONSTRAINT cep PRIMARY KEY (cep)
@@ -52,6 +37,7 @@ COMMENT ON TABLE talentos.tabela_cep IS 'Tabela de validacao de CEP';
 COMMENT ON COLUMN talentos.tabela_cep.cep IS 'CEP para identificar o endereco do func e gestor.';
 
 
+-- Tabela que representa a UF (Unidade Federativa)
 CREATE TABLE talentos.tabela_uf (
                 uf VARCHAR(2) NOT NULL,
                 cep NUMERIC(8) NOT NULL,
@@ -61,7 +47,17 @@ COMMENT ON TABLE talentos.tabela_uf IS 'Tabela de validacao para o estado dos en
 COMMENT ON COLUMN talentos.tabela_uf.uf IS 'Coluna com o UF dos CEP';
 COMMENT ON COLUMN talentos.tabela_uf.cep IS 'CEP para identificar o endereco do func e gestor.';
 
+-- Cria a FK relacionando a tabela_uf com tabela_cep 
+ALTER TABLE talentos.tabela_uf 
+ADD CONSTRAINT cep_uf_fk
+FOREIGN KEY (cep)
+REFERENCES talentos.tabela_cep (cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que reprenta a cidade do enderenço
 CREATE TABLE talentos.tabela_cidades (
                 cidades VARCHAR(32) NOT NULL,
                 uf VARCHAR(2) NOT NULL,
@@ -73,7 +69,17 @@ COMMENT ON COLUMN talentos.tabela_cidades.cidades IS 'Cidades para validacao de 
 COMMENT ON COLUMN talentos.tabela_cidades.uf IS 'Coluna com o UF dos CEP';
 COMMENT ON COLUMN talentos.tabela_cidades.cep IS 'CEP para identificar o endereco do func e gestor.';
 
+-- Cria a FK relacionando a tabela_cidades com a tabela_uf
+ALTER TABLE talentos.tabela_cidades 
+ADD CONSTRAINT uf_cidades_fk
+FOREIGN KEY (uf, cep)
+REFERENCES talentos.tabela_uf (uf, cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa o bairro do endereço
 CREATE TABLE talentos.tabela_bairros (
                 bairros VARCHAR(32) NOT NULL,
                 cidades VARCHAR(32) NOT NULL,
@@ -87,7 +93,17 @@ COMMENT ON COLUMN talentos.tabela_bairros.cidades IS 'Cidades para validacao de 
 COMMENT ON COLUMN talentos.tabela_bairros.uf IS 'Coluna com o UF dos CEP';
 COMMENT ON COLUMN talentos.tabela_bairros.cep IS 'CEP para identificar o endereco do func e gestor.';
 
+-- Cria a FK relacionando a tabela_bairros com a tabela_cidades
+ALTER TABLE talentos.tabela_bairros 
+ADD CONSTRAINT cidades_bairros_fk
+FOREIGN KEY (uf, cidades, cep)
+REFERENCES talentos.tabela_cidades (uf, cidades, cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa o logradouro (rua, av., etc) do endereço
 CREATE TABLE talentos.tabela_logradouro (
                 logradouro VARCHAR(512) NOT NULL,
                 bairros VARCHAR(32) NOT NULL,
@@ -103,7 +119,17 @@ COMMENT ON COLUMN talentos.tabela_logradouro.cidades IS 'Cidades para validacao 
 COMMENT ON COLUMN talentos.tabela_logradouro.uf IS 'Coluna com o UF dos CEP';
 COMMENT ON COLUMN talentos.tabela_logradouro.cep IS 'CEP para identificar o endereco do func e gestor.';
 
+-- Cria a FK relacionando a tabela_logradouro com a tabela_bairros
+ALTER TABLE talentos.tabela_logradouro 
+ADD CONSTRAINT bairros_logradouro_fk
+FOREIGN KEY (bairros, uf, cidades, cep)
+REFERENCES talentos.tabela_bairros (bairros, uf, cidades, cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa os gestores do banco de talentos
 CREATE TABLE talentos.gestor (
                 cod_gestor NUMERIC(10) NOT NULL,
                 nome VARCHAR(30) NOT NULL,
@@ -135,7 +161,17 @@ COMMENT ON COLUMN talentos.gestor.descricao IS 'Pequena descricao para o perfil 
 COMMENT ON COLUMN talentos.gestor.complemento IS 'Complemento para endereco do gestor.';
 COMMENT ON COLUMN talentos.gestor.cep IS 'CEP para identificar o endereco do func e gestor.';
 
+-- Cria a FK relacionando a tabela gestor com a tabela_cep
+ALTER TABLE talentos.gestor 
+ADD CONSTRAINT cep_gestor_fk
+FOREIGN KEY (cep)
+REFERENCES talentos.tabela_cep (cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa os treinamentos no banco de talentos
 CREATE TABLE talentos.treinamentos (
                 cod_treinamentos NUMERIC(10) NOT NULL,
                 cod_gestor NUMERIC(10) NOT NULL,
@@ -157,7 +193,17 @@ COMMENT ON COLUMN talentos.treinamentos.data_fim_insc IS 'Data referente a data 
 COMMENT ON COLUMN talentos.treinamentos.data_treinamento IS 'Data referente ao dia do treinamento.';
 COMMENT ON COLUMN talentos.treinamentos.foto_treinamento IS 'Foto referente ao treinamento proposto.';
 
+-- Cria a FK relacionando a tabela treinamentos com a tabela gestor
+ALTER TABLE talentos.treinamentos 
+ADD CONSTRAINT gestor_treinamentos_fk
+FOREIGN KEY (cod_gestor)
+REFERENCES talentos.gestor (cod_gestor)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa as notícias no banco de talentos
 CREATE TABLE talentos.noticias (
                 cod_noticias NUMERIC(10) NOT NULL,
                 cod_gestor NUMERIC(10) NOT NULL,
@@ -175,7 +221,17 @@ COMMENT ON COLUMN talentos.noticias.manchete_noticia IS 'Coluna criada para a co
 COMMENT ON COLUMN talentos.noticias.data_noticia IS 'Referente a data da noticia.';
 COMMENT ON COLUMN talentos.noticias.foto_noticia IS 'Coluna para armazenas a foto da noticia criada.';
 
+-- Cria a FK relacionando a tabela noticias com a tabela gestor
+ALTER TABLE talentos.noticias 
+ADD CONSTRAINT gestor_noticias_fk
+FOREIGN KEY (cod_gestor)
+REFERENCES talentos.gestor (cod_gestor)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa os eventos no banco de talentos
 CREATE TABLE talentos.eventos (
                 cod_evento NUMERIC(12) NOT NULL,
                 cod_gestor NUMERIC(10) NOT NULL,
@@ -197,7 +253,17 @@ COMMENT ON COLUMN talentos.eventos.data_fim_insc IS 'Data referente ao fim do pe
 COMMENT ON COLUMN talentos.eventos.data_evento IS 'Data referente ao dia que o evento acontecera.';
 COMMENT ON COLUMN talentos.eventos.foto_evento IS 'Foto do evento.';
 
+-- Cria a FK relacionando a tabela eventos com a tabela gestor
+ALTER TABLE talentos.eventos 
+ADD CONSTRAINT gestor_eventos_fk
+FOREIGN KEY (cod_gestor)
+REFERENCES talentos.gestor (cod_gestor)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela que representa os funcionários cadastrados no banco de talentos
 CREATE TABLE talentos.funcionarios (
                 cpf_func NUMERIC(11) NOT NULL,
                 nome VARCHAR(30) NOT NULL,
@@ -229,7 +295,17 @@ COMMENT ON COLUMN talentos.funcionarios.complemento IS 'Complemento do endereco 
 COMMENT ON COLUMN talentos.funcionarios.foto_perfil IS 'Foto para o perfil do funcionario.';
 COMMENT ON COLUMN talentos.funcionarios.email IS 'E-mail do funcionario.';
 
+-- Cria a FK relacionando a tabela funcionarios com a tabela_cep
+ALTER TABLE talentos.funcionarios 
+ADD CONSTRAINT cep_funcionarios_fk
+FOREIGN KEY (cep)
+REFERENCES talentos.tabela_cep (cep)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+
+-- Tabela intermediária entre funcionários e notícias
 CREATE TABLE talentos.funcionarios_noticias (
                 cpf_func NUMERIC(11) NOT NULL,
                 cod_noticias NUMERIC(10) NOT NULL,
@@ -238,7 +314,26 @@ CREATE TABLE talentos.funcionarios_noticias (
 COMMENT ON COLUMN talentos.funcionarios_noticias.cpf_func IS 'Chave de Identificacao dos funcionarios sera o CPF deles';
 COMMENT ON COLUMN talentos.funcionarios_noticias.cod_noticias IS 'Codigo de identificacao para diferencias as noticias.';
 
+-- Cria a FK relacionando a tabela intermediária funcionarios_noticias com a tabela noticias
+ALTER TABLE talentos.funcionarios_noticias 
+ADD CONSTRAINT noticias_funcionarios_noticias_fk
+FOREIGN KEY (cod_noticias)
+REFERENCES talentos.noticias (cod_noticias)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+-- Cria a FK relacionando a tabela intermediária funcionarios_noticias com a tabela funcionarios
+ALTER TABLE talentos.funcionarios_noticias 
+ADD CONSTRAINT funcionarios_funcionarios_noticias_fk
+FOREIGN KEY (cpf_func)
+REFERENCES talentos.funcionarios (cpf_func)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
+
+-- Tabela intermediária entre funcionários e treinamentos
 CREATE TABLE talentos.funcionarios_treinamentos (
                 cpf_func NUMERIC(11) NOT NULL,
                 cod_treinamentos NUMERIC(10) NOT NULL,
@@ -247,7 +342,26 @@ CREATE TABLE talentos.funcionarios_treinamentos (
 COMMENT ON COLUMN talentos.funcionarios_treinamentos.cpf_func IS 'Chave de Identificacao dos funcionarios sera o CPF deles';
 COMMENT ON COLUMN talentos.funcionarios_treinamentos.cod_treinamentos IS 'Codigo de identificacao para diferenciar os treinamentos.';
 
+-- Cria a FK relacionando a tabela intermediária funcionarios_treinamentos com a tabela treinamentos
+ALTER TABLE talentos.funcionarios_treinamentos 
+ADD CONSTRAINT treinamentos_funcionarios_treinamentos_fk
+FOREIGN KEY (cod_treinamentos)
+REFERENCES talentos.treinamentos (cod_treinamentos)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+--Cria a FK relacionando a tabela intermediária funcionarios_treinamentos com a tabela funcionarios
+ALTER TABLE talentos.funcionarios_treinamentos 
+ADD CONSTRAINT funcionarios_funcionarios_treinamentos_fk
+FOREIGN KEY (cpf_func)
+REFERENCES talentos.funcionarios (cpf_func)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
+
+-- Tabela intermediária entre funcionários e eventos
 CREATE TABLE talentos.funcionarios_eventos (
                 cpf_func NUMERIC(11) NOT NULL,
                 cod_evento NUMERIC(12) NOT NULL,
@@ -256,7 +370,26 @@ CREATE TABLE talentos.funcionarios_eventos (
 COMMENT ON COLUMN talentos.funcionarios_eventos.cpf_func IS 'Chave de Identificacao dos funcionarios sera o CPF deles';
 COMMENT ON COLUMN talentos.funcionarios_eventos.cod_evento IS 'Codigo de identificacao para diferenciar eventos.';
 
+-- Cria a FK relacionando a tabela intermediária funcionarios_eventos com a tabela eventos
+ALTER TABLE talentos.funcionarios_eventos 
+ADD CONSTRAINT eventos_funcionarios_eventos_fk
+FOREIGN KEY (cod_evento)
+REFERENCES talentos.eventos (cod_evento)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
+-- Cria a FK relacionando a tabela intermediária funcionarios_eventos com a tabela funcionarios
+ALTER TABLE talentos.funcionarios_eventos 
+ADD CONSTRAINT funcionarios_funcionarios_eventos_fk
+FOREIGN KEY (cpf_func)
+REFERENCES talentos.funcionarios (cpf_func)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
+
+-- Tabela intermediária entre habilidades e funcionários
 CREATE TABLE talentos.habilidades_funcionarios (
                 cod_habilidades NUMERIC(10) NOT NULL,
                 cpf_func NUMERIC(11) NOT NULL,
@@ -265,120 +398,18 @@ CREATE TABLE talentos.habilidades_funcionarios (
 COMMENT ON COLUMN talentos.habilidades_funcionarios.cod_habilidades IS 'Codigo de ID dos habilidades dos FUNC';
 COMMENT ON COLUMN talentos.habilidades_funcionarios.cpf_func IS 'Chave de Identificacao dos funcionarios sera o CPF deles';
 
-
-ALTER TABLE talentos.habilidades_funcionarios ADD CONSTRAINT hobbies_hobies_funcionarios_fk
+-- Cria a FK relacionando a tabela intermediária habilidades_funcionarios com a tabela habilidades
+ALTER TABLE talentos.habilidades_funcionarios 
+ADD CONSTRAINT habilidades_habilidades_funcionarios_fk
 FOREIGN KEY (cod_habilidades)
 REFERENCES talentos.habilidades (cod_habilidades)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
-ALTER TABLE talentos.tabela_uf ADD CONSTRAINT cep_uf_fk
-FOREIGN KEY (cep)
-REFERENCES talentos.tabela_cep (cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios ADD CONSTRAINT cep_funcionarios_fk
-FOREIGN KEY (cep)
-REFERENCES talentos.tabela_cep (cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.gestor ADD CONSTRAINT cep_gestor_fk
-FOREIGN KEY (cep)
-REFERENCES talentos.tabela_cep (cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.tabela_cidades ADD CONSTRAINT uf_cidades_fk
-FOREIGN KEY (uf, cep)
-REFERENCES talentos.tabela_uf (uf, cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.tabela_bairros ADD CONSTRAINT cidades_bairros_fk
-FOREIGN KEY (uf, cidades, cep)
-REFERENCES talentos.tabela_cidades (uf, cidades, cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.tabela_logradouro ADD CONSTRAINT bairros_logradouro_fk
-FOREIGN KEY (bairros, uf, cidades, cep)
-REFERENCES talentos.tabela_bairros (bairros, uf, cidades, cep)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.eventos ADD CONSTRAINT gestor_eventos_fk
-FOREIGN KEY (cod_gestor)
-REFERENCES talentos.gestor (cod_gestor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.treinamentos ADD CONSTRAINT gestor_treinamentos_fk
-FOREIGN KEY (cod_gestor)
-REFERENCES talentos.gestor (cod_gestor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.noticias ADD CONSTRAINT gestor_not_cias_fk
-FOREIGN KEY (cod_gestor)
-REFERENCES talentos.gestor (cod_gestor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_treinamentos ADD CONSTRAINT treinamentos_funcionarios_treinamentos_fk
-FOREIGN KEY (cod_treinamentos)
-REFERENCES talentos.treinamentos (cod_treinamentos)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_noticias ADD CONSTRAINT notificais_funcionarios_noticias_fk
-FOREIGN KEY (cod_noticias)
-REFERENCES talentos.noticias (cod_noticias)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_eventos ADD CONSTRAINT eventos_funcionarios_eventos_fk
-FOREIGN KEY (cod_evento)
-REFERENCES talentos.eventos (cod_evento)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.habilidades_funcionarios ADD CONSTRAINT funcionarios_hobies_funcionarios_fk
-FOREIGN KEY (cpf_func)
-REFERENCES talentos.funcionarios (cpf_func)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_eventos ADD CONSTRAINT funcionarios_funcionarios_eventos_fk
-FOREIGN KEY (cpf_func)
-REFERENCES talentos.funcionarios (cpf_func)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_treinamentos ADD CONSTRAINT funcionarios_funcionarios_treinamentos_fk
-FOREIGN KEY (cpf_func)
-REFERENCES talentos.funcionarios (cpf_func)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
-ALTER TABLE talentos.funcionarios_noticias ADD CONSTRAINT funcionarios_funcionarios_noticias_fk
+-- Cria a FK relacionando a tabela intermediária habilidades_funcionarios com a tabela funcionarios
+ALTER TABLE talentos.habilidades_funcionarios 
+ADD CONSTRAINT funcionarios_habilidades_funcionarios_fk
 FOREIGN KEY (cpf_func)
 REFERENCES talentos.funcionarios (cpf_func)
 ON DELETE NO ACTION
